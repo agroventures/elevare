@@ -15,6 +15,8 @@ export default function Footer() {
     .sort((a, b) => b.date - a.date)
     .slice(0, 3);
 
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="relative w-full bg-black text-white overflow-hidden">
       {/* Main Footer Content */}
@@ -144,7 +146,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             {/* Copyright */}
             <p className="text-zinc-500 text-sm text-center md:text-left">
-              © 2025{" "}
+              © {currentYear} {" "}
               <Link
                 to="/"
                 className="text-white hover:text-red transition-colors"

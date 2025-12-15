@@ -77,14 +77,15 @@ export default function Header() {
       >
         <div className="max-w-7xl mx-auto h-full flex items-center justify-between px-4 lg:px-8">
           {/* Logo */}
-          <Link to="/" className="relative group">
-            <div className="absolute -inset-2 bg-linear-to-r from-red/20 to-orange/20 rounded-xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            <div className="relative w-24 lg:w-28 h-10 lg:h-12 flex items-center">
+          <Link to="/" className="relative px-3 md:px-0 group">
+            <div className="absolute -inset-2 rounded-xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <div className="relative w-24 lg:w-28 h-10 lg:h-12 flex items-center group-hover:scale-105 transition-transform duration-300">
               <img
                 src={logoPath}
                 alt="Elevare Logo"
-                className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
+                className="w-full h-full object-contain"
               />
+              <img className="absolute w-10 -top-3 -left-5 pointer-events-none" src="/christmas_hat.png" alt="Christmas Hat" />
             </div>
           </Link>
 
@@ -121,11 +122,13 @@ export default function Header() {
 
           {/* Desktop Button */}
           <div className="hidden lg:block">
-            <Link to="/subscribe">
+            {/* <Link to="/subscribe"> */}
+              <a href="https://subscribe.elevare.lk/">
               <button className="bg-linear-to-r from-red to-orange text-white py-4 px-8 rounded-full font-semibold hover:shadow-lg hover:shadow-red/25 hover:scale-105 transition-all duration-300">
                 Subscribe
               </button>
-            </Link>
+              </a>
+            {/* </Link> */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -226,11 +229,13 @@ export default function Header() {
               }`}
               style={{ transitionDelay: "300ms" }}
             >
-              <Link to="/subscribe" onClick={() => setMobileMenu(false)}>
+              {/* <Link to="/subscribe" onClick={() => setMobileMenu(false)}> */}
+              <a href="https://subscribe.elevare.lk/">
                 <button className="bg-linear-to-r from-red to-orange text-white py-4 px-8 rounded-full font-semibold hover:shadow-lg hover:shadow-red/25 hover:scale-105 transition-all duration-300">
                   Subscribe
                 </button>
-              </Link>
+                </a>
+              {/* </Link> */}
             </div>
           </div>
 

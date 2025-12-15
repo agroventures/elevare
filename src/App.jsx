@@ -9,12 +9,30 @@ import Privacy from "./pages/Privacy";
 import ScrollToTop from "./components/ScrollToTop";
 import Refund from "./pages/Refund";
 import ArticleDetails from "./pages/ArticleDetails";
-import Subscribe from "./pages/Subscribe";
+// import Subscribe from "./pages/Subscribe";
 import Snowfall from "react-snowfall";
-import PaymentSuccess from "./pages/PaymentSuccess";
-import PaymentCancel from "./pages/PaymentCancel";
+import Loader from "./components/Loader";
+import { useEffect, useState } from "react";
+import NotFound from "./components/NotFound";
+// import SubscriptionSuccess from "./pages/SubscriptionSuccess";
+// import SubscriptionCancel from "./pages/SubscriptionCancel";
 
 function App() {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1200);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
+
   return (
     <>
       <div
@@ -39,9 +57,10 @@ function App() {
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/refund" element={<Refund />} />
-          <Route path="/subscribe" element={<Subscribe />} />
-          <Route path="/payment/success" element={<PaymentSuccess />} />
-          <Route path="/payment/cancel" element={<PaymentCancel />} />
+          {/* <Route path="/subscribe" element={<Subscribe />} /> */}
+          {/* <Route path="/subscription/success" element={<SubscriptionSuccess />} /> */}
+          {/* <Route path="/subscription/cancel" element={<SubscriptionCancel />} /> */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </>

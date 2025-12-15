@@ -212,15 +212,17 @@ export default function EMagazinePreview() {
                   </p>
                 </div>
 
-                <Link
-                  to="/subscribe"
+                {/* <Link
+                  to="/subscribe" */}
+                <a href="https://subscribe.elevare.lk/"
                   className="inline-flex items-center gap-2 bg-linear-to-r from-red to-orange text-white py-3 px-8 rounded-full font-semibold shadow-lg shadow-red/25 hover:shadow-xl hover:scale-105 transition-all duration-300 whitespace-nowrap"
                 >
                   Subscribe Now
                   <div className="w-5 h-5">
                     <CgEye size={18} />
                   </div>
-                </Link>
+                  </a>
+                {/* </Link> */}
               </div>
             </div>
           </div>
