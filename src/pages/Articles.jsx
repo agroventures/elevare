@@ -1,13 +1,24 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import ArticleDetailCard from "../components/Articles/ArticleDetailCard";
 import { articleData } from "../data/articleData";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { FaMagnifyingGlass } from "react-icons/fa6";
+import useSEO from "../hooks/useSEO";
 
 export default function Articles() {
   const [searchQuery, setSearchQuery] = useState("");
   const [visibleCount, setVisibleCount] = useState(10);
+
+  const url = window.location.href;
+
+  useSEO({
+    header: "Articles - ELEVARE Magazine",
+    description: "Elevare Magazine recently hosted its much-anticipated event on the 16th of July at Cumulus Ballroom at Cinnamon Life, Colombo, bringing together a vibrant mix of industry leaders, creative minds, and loyal readers. The evening was marked by elegance, inspiring conversations, and stunning showcases that reflected the magazine’s essence. With its graceful setting and the presence of influential personalities, the event radiated beauty, sophistication, and celebration of ideas.",
+    url,
+    image_alt: "Articles",
+    twitter_card: "summary_large_image",
+  });
 
   const filteredArticles = useMemo(() => {
     const query = searchQuery.toLowerCase().trim();

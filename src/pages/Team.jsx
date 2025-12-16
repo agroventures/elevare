@@ -5,11 +5,22 @@ import MemberCard from "../components/Team/MemberCard";
 import { teamData } from "../data/teamData";
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
+import useSEO from "../hooks/useSEO";
 
 export default function Team() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
+
+  const url = window.location.href;
+
+  useSEO({
+    header: "Team - ELEVARE Magazine",
+    description: "Meet the visionary team behind ELEVARE magazine — creators of premium content in business, lifestyle, art, and culture. Discover the people shaping our voice.",
+    url,
+    image_alt: "Team",
+    twitter_card: "summary_large_image",
+  });
 
   // Get current member
   const currentMember = teamData[activeIndex];

@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 import { termsAndConditions } from "../data/termsAndConditions";
+import useSEO from "../hooks/useSEO";
 
 export default function Terms() {
+  const url = window.location.href;
+
+  useSEO({
+    header: "Terms and Conditions - ELEVARE Magazine",
+    description: "Terms and Conditions of ELEVARE Magazine",
+    url,
+    image_alt: "Terms and Conditions",
+    twitter_card: "summary_large_image",
+  });
+
   return (
     <div className="min-h-screen bg-white">
       <Header />

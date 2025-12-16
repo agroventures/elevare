@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 import { privacyPolicy } from "../data/privacyPolicy";
+import useSEO from "../hooks/useSEO";
 
 export default function Privacy() {
+  const url = window.location.href;
+
+  useSEO({
+    header: "Privacy Policy - ELEVARE Magazine",
+    description: "Privacy Policy of ELEVARE Magazine",
+    url,
+    image_alt: "Privacy Policy",
+    twitter_card: "summary_large_image",
+  });
   return (
     <div className="min-h-screen bg-white">
       <Header />

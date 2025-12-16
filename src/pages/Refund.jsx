@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 import Header from "../components/Header";
 import { refundPolicy } from "../data/refundPolicy";
+import useSEO from "../hooks/useSEO";
 
 export default function Refund() {
+  const url = window.location.href;
+
+  useSEO({
+    header: "Refund Policy - ELEVARE Magazine",
+    description: "Refund Policy of ELEVARE Magazine",
+    url,
+    image_alt: "Refund Policy",
+    twitter_card: "summary_large_image",
+  });
   return (
     <div className="min-h-screen bg-white">
       <Header />

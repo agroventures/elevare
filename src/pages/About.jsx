@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import useSEO from "../hooks/useSEO";
+
 
 export default function About() {
   const logoPath = "/elevare-logo.png";
+  const url = window.location.href;
+
+  useSEO({
+    title: "About - ELEVARE MAGAZINE",
+    description: "Inspired by the Latin word ELEVARE meaning &quot;to elevate&quot; our name embodies our mission: to celebrate the hero within every journey.",
+    url,
+    image_alt: "About",
+    twitter_card: "summary_large_image",
+  });
 
   return (
     <div className="bg-slate-50 min-h-screen">
@@ -14,11 +25,14 @@ export default function About() {
 
         {/* Grid pattern overlay */}
         <div className="absolute inset-0 opacity-5">
-          <div className="h-full w-full" style={{
-            backgroundImage: `linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px),
+          <div
+            className="h-full w-full"
+            style={{
+              backgroundImage: `linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px),
                               linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px)`,
-            backgroundSize: '50px 50px'
-          }} />
+              backgroundSize: "50px 50px",
+            }}
+          />
         </div>
 
         <div className="relative max-w-6xl mx-auto px-4 lg:px-8">
@@ -40,26 +54,28 @@ export default function About() {
               </h1>
 
               <p className="text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
-                Inspired by the Latin word meaning "to elevate," our name 
-                embodies our mission: to celebrate the hero within every journey.
+                Inspired by the Latin word meaning "to elevate," our name
+                embodies our mission: to celebrate the hero within every
+                journey.
               </p>
 
               {/* Scroll indicator */}
               <div className="hidden lg:flex items-center gap-3 mt-12">
                 <div className="w-px h-12 bg-linear-to-b from-red to-transparent" />
-                <span className="text-xs tracking-widest uppercase">Scroll to explore</span>
+                <span className="text-xs tracking-widest uppercase">
+                  Scroll to explore
+                </span>
               </div>
             </div>
 
             {/* Logo Card */}
-            <div className="relative group">              
+            <div className="relative group">
               {/* Main card */}
               <div className="relative w-52 h-64 lg:w-64 lg:h-80 bg-black rounded-2xl flex items-center justify-center border border-white/10 shadow-2xl overflow-hidden">
-                
                 {/* Corner accents */}
                 <div className="absolute top-4 left-4 w-10 h-10 border-l-2 border-t-2 border-red/40 rounded-tl-xl" />
                 <div className="absolute bottom-4 right-4 w-10 h-10 border-r-2 border-b-2 border-red/40 rounded-br-xl" />
-                
+
                 {/* Logo */}
                 <img
                   src={logoPath}
@@ -89,10 +105,22 @@ export default function About() {
               <div className="relative bg-linear-to-br from-slate-50 to-white rounded-2xl p-8 lg:p-12 border border-slate-100 shadow-xl shadow-slate-200/50">
                 <p className="text-xl lg:text-2xl text-slate-700 leading-relaxed font-light italic">
                   Business is not just about numbers—it's about{" "}
-                  <span className="text-red font-medium not-italic">people</span>,{" "}
-                  <span className="text-red font-medium not-italic">stories</span>,{" "}
-                  <span className="text-red font-medium not-italic">memory</span> and{" "}
-                  <span className="text-red font-medium not-italic">meaning</span>.
+                  <span className="text-red font-medium not-italic">
+                    people
+                  </span>
+                  ,{" "}
+                  <span className="text-red font-medium not-italic">
+                    stories
+                  </span>
+                  ,{" "}
+                  <span className="text-red font-medium not-italic">
+                    memory
+                  </span>{" "}
+                  and{" "}
+                  <span className="text-red font-medium not-italic">
+                    meaning
+                  </span>
+                  .
                 </p>
                 <div className="mt-6 flex items-center gap-3">
                   <div className="h-px flex-1 bg-linear-to-r from-red to-transparent" />
@@ -118,21 +146,22 @@ export default function About() {
               </div>
 
               <p className="text-slate-600 text-lg leading-relaxed">
-                <span className="font-semibold text-slate-800">ELEVARE</span> is a luxury, 
-                business and lifestyle magazine with a distinctive vision, connecting 
-                Sri Lanka's most successful entrepreneurs at home and abroad with 
-                emerging businesses and ventures.
+                <span className="font-semibold text-slate-800">ELEVARE</span> is
+                a luxury, business and lifestyle magazine with a distinctive
+                vision, connecting Sri Lanka's most successful entrepreneurs at
+                home and abroad with emerging businesses and ventures.
               </p>
 
               <p className="text-slate-500 leading-relaxed">
-                We explore the intersections of enterprise, culture, and human experience, 
-                engaging business communities, investors, expats, innovators, and artists. 
-                Entrepreneurship, to us, is deeply personal and transformative.
+                We explore the intersections of enterprise, culture, and human
+                experience, engaging business communities, investors, expats,
+                innovators, and artists. Entrepreneurship, to us, is deeply
+                personal and transformative.
               </p>
 
               <p className="text-slate-500 leading-relaxed">
-                That's why we carve out space for art, heritage, and cultural exchange 
-                alongside business features and inspiring profiles.
+                That's why we carve out space for art, heritage, and cultural
+                exchange alongside business features and inspiring profiles.
               </p>
             </div>
           </div>

@@ -6,12 +6,14 @@ import { articleData } from "../data/articleData";
 import { BsArrowRight } from "react-icons/bs";
 import ArticleDetailCard from "../components/Articles/ArticleDetailCard";
 import { FaCopy, FaFacebook, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import useSEO from "../hooks/useSEO";
 
 export default function ArticleDetails() {
   const { slug } = useParams();
   const [article, setArticle] = useState(null);
   const [relatedArticles, setRelatedArticles] = useState([]);
   const [scrollProgress, setScrollProgress] = useState(0);
+  const url = window.location.href;
 
   useEffect(() => {
     // Find the article by slug
@@ -32,6 +34,14 @@ export default function ArticleDetails() {
     // Scroll to top
     window.scrollTo(0, 0);
   }, [slug]);
+
+  useSEO({
+    title: article ? article.title : "Loading...",
+    description: article?.excerpt || article?.title,
+    url,
+    image_alt: article ? article.title : "Loading...",
+    twitter_card: "summary_large_image",
+  });
 
   // Reading progress bar
   useEffect(() => {
@@ -84,6 +94,7 @@ export default function ArticleDetails() {
 
   return (
     <div className="bg-white">
+
       {/* Reading Progress Bar */}
       <div
         className="fixed top-0 left-0 h-1 bg-linear-to-r from-red to-orange z-50 transition-all duration-150"
