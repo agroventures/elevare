@@ -172,7 +172,7 @@ export default function Header() {
 
         {/* Menu Panel */}
         <nav
-          className={`absolute top-20 left-0 right-0 bg-slate-900/95 backdrop-blur-xl border-t border-white/10 transition-all duration-500 ${
+          className={`absolute top-20 left-0 right-0 bg-black backdrop-blur-xl border-t border-white/10 transition-all duration-500 ${
             mobileMenu
               ? "opacity-100 translate-y-0"
               : "opacity-0 -translate-y-8"
