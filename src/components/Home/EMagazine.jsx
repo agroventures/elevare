@@ -174,19 +174,20 @@ export default function EMagazinePreview() {
 
             {/* Modal Body */}
             <div className="p-6 overflow-y-auto max-h-[calc(90vh-200px)]">
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 gap-6">
                 <div className="group relative overflow-hidden rounded-2xl shadow-lg">
-                  <img
-                    src="/images/preview-page-1.jpg"
-                    alt="Preview Page 1"
-                    className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
-                  />
+                  <iframe
+                    src="/src/assets/e-magazine/free_pages.pdf#toolbar=0&navpanes=0&scrollbar=0"
+                    width="100%"
+                    height="600px"
+                    style={{ border: 'none' }}
+                  ></iframe>
                   <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-medium text-zinc-700">
                     Page 1
                   </div>
                 </div>
 
-                <div className="group relative overflow-hidden rounded-2xl shadow-lg">
+                {/* <div className="group relative overflow-hidden rounded-2xl shadow-lg">
                   <img
                     src="/images/preview-page-2.jpg"
                     alt="Preview Page 2"
@@ -195,7 +196,7 @@ export default function EMagazinePreview() {
                   <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-medium text-zinc-700">
                     Page 2
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -221,7 +222,7 @@ export default function EMagazinePreview() {
                   <div className="w-5 h-5">
                     <CgEye size={18} />
                   </div>
-                  </a>
+                </a>
                 {/* </Link> */}
               </div>
             </div>

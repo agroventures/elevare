@@ -14,6 +14,7 @@ import Snowfall from "react-snowfall";
 import Loader from "./components/Loader";
 import { useEffect, useState } from "react";
 import NotFound from "./components/NotFound";
+import { Toaster } from "react-hot-toast";
 // import SubscriptionSuccess from "./pages/SubscriptionSuccess";
 // import SubscriptionCancel from "./pages/SubscriptionCancel";
 
@@ -24,7 +25,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1200);
+    }, 500);
 
     return () => clearTimeout(timer);
   }, []);
@@ -47,6 +48,10 @@ function App() {
       </div>
 
       <BrowserRouter>
+        <Toaster
+          position="top-right"
+          reverseOrder={false}
+        />
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />

@@ -7,6 +7,7 @@ import { BsArrowRight } from "react-icons/bs";
 import ArticleDetailCard from "../components/Articles/ArticleDetailCard";
 import { FaCopy, FaFacebook, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import useSEO from "../hooks/useSEO";
+import toast from "react-hot-toast";
 
 export default function ArticleDetails() {
   const { slug } = useParams();
@@ -59,7 +60,7 @@ export default function ArticleDetails() {
   // Copy link to clipboard
   const copyLink = () => {
     navigator.clipboard.writeText(window.location.href);
-    alert("Link copied to clipboard!");
+    toast.success("Link copied to clipboard!");
   };
 
   // Share functions
@@ -235,6 +236,25 @@ export default function ArticleDetails() {
                 }
               </div>
 
+              {article.album && (
+                <div className="mt-10 pt-8 border-t border-gray-200">
+                  <div className="columns-2 md:columns-3 gap-4">
+                    {article.album.map((url, index) => (
+                      <div
+                        key={index}
+                        className="mb-4 break-inside-avoid overflow-hidden rounded-lg group"
+                      >
+                        <img
+                          src={url}
+                          alt={`${article.title} - ${index + 1}`}
+                          className="w-full object-cover transition-transform duration-700 cursor-pointer group-hover:scale-110"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               {article.bottomQuote && (
                 <div className="py-10 font-bold text-lg text-center">{article.bottomQuote}</div>
               )}
@@ -255,6 +275,14 @@ export default function ArticleDetails() {
                   </div>
                 </div>
               )} */}
+
+              <div className="mt-10 pt-8 border-t border-gray-200 flex justify-center">
+                <a href="https://subscribe.elevare.lk/">
+                  <button className="bg-linear-to-r from-red to-orange text-white py-4 px-8 rounded-full font-semibold hover:shadow-lg hover:shadow-red/25 hover:scale-105 transition-all duration-300">
+                    Subscribe
+                  </button>
+                </a>
+              </div>
 
               {/* Mobile Share Buttons */}
               <div className="lg:hidden mt-8 pt-8 border-t border-gray-200">
