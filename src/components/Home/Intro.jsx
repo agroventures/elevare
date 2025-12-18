@@ -37,7 +37,7 @@ export default function Intro() {
 
             {/* CTA Button */}
             <Link to='/about'>
-              <button className="group inline-flex items-center gap-2 px-8 py-4 bg-slate-900 text-white font-medium rounded-full hover:bg-slate-800 transition-all duration-300 hover:shadow-lg hover:shadow-slate-900/25">
+              <button className="group inline-flex items-center gap-2 px-8 py-4 bg-black text-white font-medium rounded-full hover:bg-slate-800 transition-all duration-300 hover:shadow-lg hover:shadow-slate-900/25">
                 Discover More
                 <span className="inline-block ml-2 transition-transform duration-300 group-hover:translate-x-1">
                   <BsArrowRight size={20} />

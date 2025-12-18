@@ -124,7 +124,7 @@ export default function Header() {
           <div className="hidden lg:block">
             {/* <Link to="/subscribe"> */}
               <a href="https://subscribe.elevare.lk/">
-              <button className="bg-linear-to-r from-red to-orange text-white py-4 px-8 rounded-full font-semibold hover:shadow-lg hover:shadow-red/25 hover:scale-105 transition-all duration-300">
+              <button className="bg-linear-to-r from-red to-orange text-white py-4 px-8 rounded-full font-semibold cursor-pointer  hover:shadow-lg hover:shadow-red/25 hover:scale-105 transition-all duration-300">
                 Subscribe
               </button>
               </a>

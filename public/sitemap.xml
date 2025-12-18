@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://elevare.lk/</loc>
+    <lastmod>2025-12-18</lastmod>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://elevare.lk/about</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://elevare.lk/articles</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://elevare.lk/articles/when-paris-meets-paradise</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://elevare.lk/articles/custodian-of-the-canvas</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://elevare.lk/articles/gehenu-lamai</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://elevare.lk/articles/reimagining-korea-sri-lanka-relations</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://elevare.lk/articles/randy-chriz</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://elevare.lk/articles/the-art-of-image-management</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://elevare.lk/articles/elevate-with-akash</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://elevare.lk/team</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://elevare.lk/terms</loc>
+    <priority>0.50</priority>
+  </url>
+
+  <url>
+    <loc>https://elevare.lk/privacy</loc>
+    <priority>0.50</priority>
+  </url>
+
+  <url>
+    <loc>https://elevare.lk/refund</loc>
+    <priority>0.50</priority>
+  </url>
+
+</urlset>

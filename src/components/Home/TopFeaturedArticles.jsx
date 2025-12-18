@@ -49,7 +49,7 @@ export default function TopFeaturedArticles() {
         <div className="text-center mt-14">
           <Link
             to="/articles"
-            className="group inline-flex items-center gap-2 px-8 py-4 bg-slate-900 text-white font-medium rounded-full hover:bg-slate-800 transition-all duration-300 hover:shadow-lg hover:shadow-slate-900/25"
+            className="group inline-flex items-center gap-2 px-8 py-4 bg-black text-white font-medium rounded-full hover:bg-slate-800 transition-all duration-300 hover:shadow-lg hover:shadow-slate-900/25"
           >
             View All Articles
             <div className="w-5 h-5 group-hover:translate-x-1 transition-transform">
