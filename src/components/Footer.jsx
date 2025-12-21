@@ -7,7 +7,7 @@ import {
   BsTwitterX,
 } from "react-icons/bs";
 import { HiOutlineMail, HiOutlineLocationMarker } from "react-icons/hi";
-import logo from "../assets/elevaremagazinee.svg";
+import logo from "/images/elevaremagazinee.svg"
 import { articleData } from "../data/articleData";
 
 export default function Footer() {

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export default function EMagazinePreview() {
   const [open, setOpen] = useState(false);
 
-  const magazineImagePath = "/src/assets/magazine/magazines-min.png";
+  const magazineImagePath = "/images/magazine/magazines-min.png";
 
   return (
     <>
@@ -177,7 +177,7 @@ export default function EMagazinePreview() {
               <div className="grid grid-cols-1 gap-6">
                 <div className="group relative overflow-hidden rounded-2xl shadow-lg">
                   <iframe
-                    src="/src/assets/e-magazine/free_pages.pdf#toolbar=0&navpanes=0&scrollbar=0"
+                    src="/images/e-magazine/free_pages.pdf#toolbar=0&navpanes=0&scrollbar=0"
                     width="100%"
                     height="600px"
                     style={{ border: 'none' }}
