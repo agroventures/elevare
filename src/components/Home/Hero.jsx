@@ -1,5 +1,5 @@
 export default function Hero() {
-  const videoLink = "https://elevare.lk/wp-content/uploads/2025/06/elevare.mp4";
+  const videoLink = "/videos/elevare.mp4";
   const logoPath = "/elevare-logo.png"
 
   return (
