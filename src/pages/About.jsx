@@ -49,7 +49,7 @@ export default function About() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-light tracking-wide mb-6">
                 About{" "}
                 <span className="font-semibold bg-linear-to-r from-red to-orange bg-clip-text text-transparent">
-                  Elevare
+                  ELEVARE
                 </span>
               </h1>
 
