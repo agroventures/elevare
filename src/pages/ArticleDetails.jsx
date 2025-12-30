@@ -65,22 +65,27 @@ export default function ArticleDetails() {
 
   // Share functions
   const shareOnWhatsapp = () => {
-    window.open(
-      `https://api.whatsapp.com/send?text=${article.title}&url=${window.location.href}`,
-      "_blank"
-    );
+    const message = `${article.title}\n\n${window.location.href}`;
+  
+    const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(message)}`;
+  
+    window.open(whatsappUrl, "_blank");
   };
 
   const shareOnLinkedIn = () => {
+    const url = encodeURIComponent(window.location.href);
+  
     window.open(
-      `https://www.linkedin.com/sharing/share-offsite/?url=${window.location.href}`,
+      `https://www.linkedin.com/sharing/share-offsite/?url=${url}`,
       "_blank"
     );
   };
-
+  
   const shareOnFacebook = () => {
+    const url = encodeURIComponent(window.location.href);
+  
     window.open(
-      `https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`,
+      `https://www.facebook.com/sharer/sharer.php?u=${url}`,
       "_blank"
     );
   };
