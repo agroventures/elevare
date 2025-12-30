@@ -10,7 +10,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Refund from "./pages/Refund";
 import ArticleDetails from "./pages/ArticleDetails";
 // import Subscribe from "./pages/Subscribe";
-import Snowfall from "react-snowfall";
+// import Snowfall from "react-snowfall";
 import Loader from "./components/Loader";
 import { useEffect, useState } from "react";
 import NotFound from "./components/NotFound";
@@ -36,7 +36,7 @@ function App() {
 
   return (
     <>
-      <div
+      {/* <div
         style={{
           position: "fixed",
           inset: 0, // top:0, right:0, bottom:0, left:0
@@ -45,7 +45,7 @@ function App() {
         }}
       >
         <Snowfall snowflakeCount={200} color="#f8fffd" radius={[1, 3]} />
-      </div>
+      </div> */}
 
       <BrowserRouter>
         <Toaster
