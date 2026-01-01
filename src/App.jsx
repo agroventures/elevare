@@ -14,6 +14,7 @@ import ArticleDetails from "./pages/ArticleDetails";
 import Loader from "./components/Loader";
 import { useEffect, useState } from "react";
 import NotFound from "./components/NotFound";
+import RedirectToSubscribe from "./pages/RedirectToSubscribe";
 import { Toaster } from "react-hot-toast";
 // import SubscriptionSuccess from "./pages/SubscriptionSuccess";
 // import SubscriptionCancel from "./pages/SubscriptionCancel";
@@ -62,7 +63,7 @@ function App() {
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/refund" element={<Refund />} />
-          {/* <Route path="/subscribe" element={<Subscribe />} /> */}
+          <Route path="/subscribe" element={<RedirectToSubscribe />} />
           {/* <Route path="/subscription/success" element={<SubscriptionSuccess />} /> */}
           {/* <Route path="/subscription/cancel" element={<SubscriptionCancel />} /> */}
           <Route path="*" element={<NotFound />} />
