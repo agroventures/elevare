@@ -85,7 +85,7 @@ export default function Header() {
                 alt="Elevare Logo"
                 className="w-full h-full object-contain"
               />
-              <img className="absolute w-10 -top-3 -left-5 pointer-events-none" src="/christmas_hat.png" alt="Christmas Hat" />
+              {/* <img className="absolute w-10 -top-3 -left-5 pointer-events-none" src="/christmas_hat.png" alt="Christmas Hat" /> */}
             </div>
           </Link>
 
