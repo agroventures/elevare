@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import ArticleDetailCard from "../components/Articles/ArticleDetailCard";
 import { articleData } from "../data/articleData";
 import Header from "../components/Header";
@@ -7,8 +8,19 @@ import { FaMagnifyingGlass } from "react-icons/fa6";
 import useSEO from "../hooks/useSEO";
 
 export default function Articles() {
+  const [searchParams, setSearchParams] = useSearchParams();
   const [searchQuery, setSearchQuery] = useState("");
   const [visibleCount, setVisibleCount] = useState(10);
+
+  // Get volume from URL params, default to "All"
+  const volumeParam = searchParams.get("volume");
+  const [selectedVolume, setSelectedVolume] = useState(() => {
+    if (volumeParam) {
+      const parsedVolume = parseInt(volumeParam);
+      return isNaN(parsedVolume) ? "All" : parsedVolume;
+    }
+    return "All";
+  });
 
   const url = window.location.href;
 
@@ -20,12 +32,43 @@ export default function Articles() {
     twitter_card: "summary_large_image",
   });
 
+    useEffect(() => {
+    if (volumeParam) {
+      const parsedVolume = parseInt(volumeParam);
+      if (!isNaN(parsedVolume)) {
+        setSelectedVolume(parsedVolume);
+      }
+    } else {
+      setSelectedVolume("All");
+    }
+  }, [volumeParam]);
+
+  // Extract unique volumes from articleData (volumes are numbers)
+  const volumes = useMemo(() => {
+    const uniqueVolumes = [
+      ...new Set(
+        articleData
+          .map((article) => article.volume)
+          .filter((v) => v !== undefined && v !== null)
+      ),
+    ];
+    // Sort numerically
+    uniqueVolumes.sort((a, b) => a - b);
+    return ["All", ...uniqueVolumes];
+  }, []);
+
   const filteredArticles = useMemo(() => {
     const query = searchQuery.toLowerCase().trim();
 
     return [...articleData]
       .sort((a, b) => b.id - a.id)
       .filter((article) => {
+        // Volume filter (compare as numbers)
+        if (selectedVolume !== "All" && article.volume !== selectedVolume) {
+          return false;
+        }
+
+        // Search filter
         const title = (article.title || "").toLowerCase();
         const excerpt = (article.excerpt || "").toLowerCase();
 
@@ -33,9 +76,28 @@ export default function Articles() {
 
         return title.includes(query) || excerpt.includes(query);
       });
-  }, [searchQuery]);
+  }, [searchQuery, selectedVolume]);
 
   const visibleArticles = filteredArticles.slice(0, visibleCount);
+
+  const handleVolumeChange = (volume) => {
+    setSelectedVolume(volume);
+    setVisibleCount(10);
+
+    // Update URL params
+    if (volume === "All") {
+      searchParams.delete("volume");
+    } else {
+      searchParams.set("volume", volume.toString());
+    }
+    setSearchParams(searchParams);
+  };
+
+  // Helper to display volume label
+  const getVolumeLabel = (volume) => {
+    if (volume === "All") return "All";
+    return `Volume ${volume}`;
+  };
 
   return (
     <div>
@@ -46,28 +108,28 @@ export default function Articles() {
           Articles
         </h2>
 
-        {/* Category Filter */}
-        {/* <section className="bg-white border-b border-gray-200 sticky top-0 z-40">
+        {/* Volume Filter */}
+        <section className="bg-white border-b border-gray-200 sticky top-16 z-40">
           <div className="max-w-7xl mx-auto px-4">
             <div className="flex items-center gap-2 py-4 overflow-x-auto scrollbar-hide">
-              {categories.map((category) => (
+              {volumes.map((volume) => (
                 <button
-                  key={category}
-                  onClick={() => setSelectedCategory(category)}
+                  key={volume}
+                  onClick={() => handleVolumeChange(volume)}
                   className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-300 ${
-                    selectedCategory === category
-                      ? "bg-amber-500 text-white"
-                      : "bg-gray-100 text-gray hover:bg-gray-200"
+                    selectedVolume === volume
+                      ? "bg-red text-white"
+                      : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                   }`}
                 >
-                  {category}
+                  {getVolumeLabel(volume)}
                 </button>
               ))}
             </div>
           </div>
-        </section> */}
+        </section>
 
-        {/* Main Content with Sidebar */}
+        {/* Main Content */}
         <section className="max-w-7xl mx-auto px-4 py-10">
           <div className="flex flex-col lg:flex-row gap-10">
             <div className="flex-1">
@@ -80,7 +142,7 @@ export default function Articles() {
                   <input
                     type="search"
                     placeholder="Search articles…"
-                    className="w-full border border-gray-300 pl-10 pr-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all"
+                    className="w-full border border-gray-300 pl-10 pr-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-red focus:border-transparent transition-all"
                     value={searchQuery}
                     onChange={(e) => {
                       setSearchQuery(e.target.value);
@@ -89,8 +151,13 @@ export default function Articles() {
                   />
                 </div>
               </div>
-              <div className="flex items-center justify-end mb-6">
-                <span className="text-gray-500 text-sm">
+              <div className="flex items-center justify-between mb-6">
+                {selectedVolume !== "All" && (
+                  <span className="text-red text-sm font-medium">
+                    Showing: Volume {selectedVolume}
+                  </span>
+                )}
+                <span className="text-gray-500 text-sm ml-auto">
                   {filteredArticles.length} article
                   {filteredArticles.length !== 1 ? "s" : ""}
                 </span>
@@ -99,7 +166,13 @@ export default function Articles() {
               {/* Show message when no results */}
               {visibleArticles.length === 0 ? (
                 <div className="text-center py-10 text-gray-500">
-                  No articles found for "{searchQuery}"
+                  {searchQuery
+                    ? `No articles found for "${searchQuery}"${
+                        selectedVolume !== "All"
+                          ? ` in Volume ${selectedVolume}`
+                          : ""
+                      }`
+                    : `No articles found in Volume ${selectedVolume}`}
                 </div>
               ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -120,11 +193,6 @@ export default function Articles() {
                 </div>
               )}
             </div>
-
-            {/* Sidebar */}
-            {/* <aside className="lg:w-[380px] shrink-0">
-              <ArticleSidebar />
-            </aside> */}
           </div>
         </section>
       </main>
