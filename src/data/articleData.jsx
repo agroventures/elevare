@@ -2,6 +2,7 @@ export const articleData = [
   {
     id: 1,
     title: "When Paris meets Paradise",
+    volume:1,
     shortTitle: "When Paris meets Paradise",
     slug: "when-paris-meets-paradise",
     excerpt:
@@ -76,6 +77,7 @@ export const articleData = [
   {
     id: 2,
     title: "Custodian of the Canvas",
+    volume: 1,
     shortTitle: "Custodian of the Canvas",
     slug: "custodian-of-the-canvas",
     excerpt:
@@ -165,6 +167,7 @@ export const articleData = [
   {
     id: 3,
     title: "Gehenu Lamai",
+    volume: 1,
     shortTitle: "Gehenu Lamai",
     slug: "gehenu-lamai",
     excerpt:
@@ -214,6 +217,7 @@ export const articleData = [
   {
     id: 4,
     title: "Reimagining Korea – Sri Lanka Relations",
+    volume: 1,
     shortTitle: "Reimagining Korea – Sri Lanka Relations",
     slug: "reimagining-korea-sri-lanka-relations",
     excerpt:
@@ -316,6 +320,7 @@ export const articleData = [
     id: 5,
     title:
       "Randy Chriz – The extraordinary creative genius redefining the landscape of visual storytelling",
+    volume: 1,
     shortTitle: "Randy Chriz – The extraordinary creative genius..",
     slug: "randy-chriz",
     excerpt:
@@ -371,6 +376,7 @@ export const articleData = [
   {
     id: 6,
     title: "The Art of Image Management: Inspired by Sabeetha Hettiarachchi",
+    volume: 2,
     shortTitle: "The Art of Image Management",
     slug: "the-art-of-image-management",
     excerpt:
@@ -450,6 +456,7 @@ export const articleData = [
   {
     id: 7,
     title: "Elevate with Akash: A New Era of Conversations on ELEVARE TV",
+    volume: 2,
     shortTitle: "Elevate with Akash",
     slug: "elevate-with-akash",
     excerpt:
