@@ -109,7 +109,7 @@ export default function Articles() {
         </h2>
 
         {/* Volume Filter */}
-        <section className="bg-white border-b border-gray-200 sticky top-16 z-40">
+        <section className="bg-white border-b border-gray-200 sticky top-16 z-30">
           <div className="max-w-7xl mx-auto px-4">
             <div className="flex items-center gap-2 py-4 overflow-x-auto scrollbar-hide">
               {volumes.map((volume) => (
@@ -118,7 +118,7 @@ export default function Articles() {
                   onClick={() => handleVolumeChange(volume)}
                   className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-300 ${
                     selectedVolume === volume
-                      ? "bg-red text-white"
+                      ? "bg-blue text-white"
                       : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                   }`}
                 >
@@ -142,7 +142,7 @@ export default function Articles() {
                   <input
                     type="search"
                     placeholder="Search articles…"
-                    className="w-full border border-gray-300 pl-10 pr-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-red focus:border-transparent transition-all"
+                    className="w-full border border-gray-300 pl-10 pr-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue focus:border-transparent transition-all"
                     value={searchQuery}
                     onChange={(e) => {
                       setSearchQuery(e.target.value);
@@ -153,7 +153,7 @@ export default function Articles() {
               </div>
               <div className="flex items-center justify-between mb-6">
                 {selectedVolume !== "All" && (
-                  <span className="text-red text-sm font-medium">
+                  <span className="text-blue text-sm font-medium">
                     Showing: Volume {selectedVolume}
                   </span>
                 )}

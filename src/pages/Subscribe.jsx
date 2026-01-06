@@ -313,7 +313,7 @@ export default function Subscribe() {
       "w-full border rounded-xl px-4 py-3.5 focus:outline-none focus:ring-2 transition-all";
     const errorClasses =
       errors[fieldName] && touched[fieldName]
-        ? "border-red-400 bg-red-50 focus:ring-red-500 focus:border-transparent error-field"
+        ? "border-red-400 bg-red-50 focus:ring-blue focus:border-transparent error-field"
         : "border-gray-200 bg-gray-50 focus:bg-white focus:ring-black focus:border-transparent";
     return `${baseClasses} ${errorClasses}`;
   };
@@ -366,7 +366,7 @@ export default function Subscribe() {
   const ErrorMessage = ({ error }) => {
     if (!error) return null;
     return (
-      <div className="flex items-center gap-1 mt-1.5 text-red-500 text-sm animate-fadeIn">
+      <div className="flex items-center gap-1 mt-1.5 text-blue text-sm animate-fadeIn">
         <BiErrorCircle className="text-base shrink-0" />
         <span>{error}</span>
       </div>
@@ -402,7 +402,7 @@ export default function Subscribe() {
                   .getElementById("form")
                   .scrollIntoView({ behavior: "smooth" })
               }
-              className="bg-linear-to-r from-red to-orange text-white py-4 px-8 rounded-full font-semibold hover:shadow-lg hover:shadow-red-500/25 hover:scale-105 transition-all duration-300"
+              className="bg-blue text-white py-4 px-8 rounded-full font-semibold hover:shadow-lg hover:shadow-blue/25 hover:scale-105 transition-all duration-300"
             >
               Subscribe Now
             </button>
@@ -424,7 +424,7 @@ export default function Subscribe() {
               className="rounded-2xl border border-gray-100 bg-white shadow-sm hover:shadow-md transition-shadow duration-300 p-6"
             >
               <div className="flex items-center gap-3 mb-2">
-                <span className="text-2xl text-red-500 bg-red-50 p-2 rounded-lg">
+                <span className="text-2xl text-blue bg-red-50 p-2 rounded-lg">
                   {mag.icon}
                 </span>
                 <h2 className="text-lg font-bold">{mag.feature}</h2>
@@ -452,7 +452,7 @@ export default function Subscribe() {
               {/* First Name */}
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
-                  First Name <span className="text-red-500">*</span>
+                  First Name <span className="text-blue">*</span>
                 </label>
                 <input
                   type="text"
@@ -471,7 +471,7 @@ export default function Subscribe() {
               {/* Last Name */}
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
-                  Last Name <span className="text-red-500">*</span>
+                  Last Name <span className="text-blue">*</span>
                 </label>
                 <input
                   type="text"
@@ -488,7 +488,7 @@ export default function Subscribe() {
               {/* Email */}
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
-                  Email Address <span className="text-red-500">*</span>
+                  Email Address <span className="text-blue">*</span>
                 </label>
                 <input
                   type="email"
@@ -505,7 +505,7 @@ export default function Subscribe() {
               {/* Phone */}
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
-                  Phone Number <span className="text-red-500">*</span>
+                  Phone Number <span className="text-blue">*</span>
                 </label>
                 <PhoneInput
                   country={"lk"}
@@ -546,7 +546,7 @@ export default function Subscribe() {
               {/* Address */}
               <div className="col-span-1 md:col-span-2">
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
-                  Address <span className="text-red-500">*</span>
+                  Address <span className="text-blue">*</span>
                 </label>
                 <input
                   type="text"
@@ -563,7 +563,7 @@ export default function Subscribe() {
               {/* City */}
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
-                  City <span className="text-red-500">*</span>
+                  City <span className="text-blue">*</span>
                 </label>
                 <input
                   type="text"
@@ -580,7 +580,7 @@ export default function Subscribe() {
               {/* State */}
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
-                  State/Province <span className="text-red-500">*</span>
+                  State/Province <span className="text-blue">*</span>
                 </label>
                 <input
                   type="text"
@@ -597,7 +597,7 @@ export default function Subscribe() {
               {/* Postal Code */}
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
-                  Postal Code <span className="text-red-500">*</span>
+                  Postal Code <span className="text-blue">*</span>
                 </label>
                 <input
                   type="text"
@@ -616,7 +616,7 @@ export default function Subscribe() {
               {/* Country */}
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
-                  Country <span className="text-red-500">*</span>
+                  Country <span className="text-blue">*</span>
                 </label>
                 <Select
                   value={formData.country}
@@ -634,7 +634,7 @@ export default function Subscribe() {
               <div className="col-span-1 md:col-span-2">
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
                   Select Subscription Plan{" "}
-                  <span className="text-red-500">*</span>
+                  <span className="text-blue">*</span>
                 </label>
                 <select
                   name="plan"

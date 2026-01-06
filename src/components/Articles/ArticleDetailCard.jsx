@@ -21,7 +21,7 @@ export default function ArticleDetailCard({ article }) {
         {/* Content */}
         <div className="p-6 flex flex-col flex-1">
           {/* Title */}
-          <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-amber-600 transition-colors duration-300 line-clamp-2">
+          <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue transition-colors duration-300 line-clamp-2">
             {article.title}
           </h3>
 

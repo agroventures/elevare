@@ -14,25 +14,25 @@ export default function Magazines() {
   return (
     <section className="py-24 px-4 relative overflow-hidden">
       {/* Background Decorations */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-red/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-orange/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue/5 rounded-full blur-3xl" />
 
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="inline-flex items-center gap-2 px-4 py-2 bg-white text-red text-sm font-medium rounded-full mb-4 border border-zinc-300 shadow-sm">
+          <span className="inline-flex items-center gap-2 px-4 py-2 bg-white text-blue text-sm font-medium rounded-full mb-4 border border-zinc-300 shadow-sm">
             <div className="w-4 h-4">
               <HiBookOpen size={20} />
             </div>
             Our Collection
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
             Magazine Volumes
           </h2>
           <p className="text-zinc-600 max-w-2xl mx-auto text-lg">
             Explore our carefully curated collection of magazine editions
           </p>
-          <div className="w-20 h-1 bg-linear-to-r from-red to-orange mx-auto mt-6 rounded-full" />
+          <div className="w-20 h-1 bg-blue mx-auto mt-6 rounded-full" />
         </div>
 
         {/* Swiper Container */}

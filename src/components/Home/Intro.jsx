@@ -12,8 +12,8 @@ export default function Intro() {
           {/* Text content */}
           <div className="flex-1 space-y-6">
             <div className="flex items-center gap-4">
-              <div className="h-px w-12 bg-linear-to-r from-red to-orange" />
-              <span className="text-sm font-medium tracking-widest text-red uppercase">
+              <div className="h-px w-12 bg-blue" />
+              <span className="text-sm font-medium tracking-widest text-blue uppercase">
                 Welcome
               </span>
             </div>
@@ -37,7 +37,7 @@ export default function Intro() {
 
             {/* CTA Button */}
             <Link to='/about'>
-              <button className="group inline-flex items-center gap-2 px-8 py-4 bg-black text-white font-medium rounded-full hover:bg-slate-800 transition-all duration-300 hover:shadow-lg hover:shadow-slate-900/25">
+              <button className="group inline-flex items-center gap-2 px-8 py-4 bg-blue text-white font-medium rounded-full hover:bg-slate-800 transition-all duration-300 hover:shadow-lg hover:shadow-slate-900/25">
                 Discover More
                 <span className="inline-block ml-2 transition-transform duration-300 group-hover:translate-x-1">
                   <BsArrowRight size={20} />
@@ -48,13 +48,13 @@ export default function Intro() {
 
           {/* Logo Card */}
           <div className="relative group">
-            <div className="absolute -inset-4 bg-linear-to-r from-red/20 via-orange/20 to-red/20 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="absolute -inset-4 bg-blue/20 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
             {/* Glass card */}
             <div className="relative w-48 h-64 md:w-56 md:h-72 bg-black rounded-2xl flex items-center justify-center shadow-2xl shadow-slate-900/30 overflow-hidden transition-transform duration-500 group-hover:scale-[1.02]">
               {/* Decorative corner accents */}
-              <div className="absolute top-4 left-4 w-8 h-8 border-l-2 border-t-2 border-amber-500/50 rounded-tl-lg" />
-              <div className="absolute bottom-4 right-4 w-8 h-8 border-r-2 border-b-2 border-amber-500/50 rounded-br-lg" />
+              <div className="absolute top-4 left-4 w-8 h-8 border-l-2 border-t-2 border-blue rounded-tl-lg" />
+              <div className="absolute bottom-4 right-4 w-8 h-8 border-r-2 border-b-2 border-blue rounded-br-lg" />
 
               {/* Logo */}
               <img

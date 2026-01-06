@@ -40,7 +40,7 @@ export default function ArticleCard({
         {/* Content */}
         <div className="p-6">
           {/* Title */}
-          <h3 className="text-lg font-bold text-slate-900 line-clamp-2 mb-4 group-hover:text-red transition-colors duration-300">
+          <h3 className="text-lg font-bold text-slate-900 line-clamp-2 mb-4 group-hover:text-blue transition-colors duration-300">
             {topic}
           </h3>
 
@@ -64,7 +64,7 @@ export default function ArticleCard({
         </div>
 
         {/* Bottom Accent Line */}
-        <div className="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-red to-orange transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-blue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
       </article>
     </Link>
   );

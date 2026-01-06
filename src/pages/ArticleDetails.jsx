@@ -93,7 +93,7 @@ export default function ArticleDetails() {
   if (!article) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-red"></div>
+        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue"></div>
       </div>
     );
   }
@@ -103,7 +103,7 @@ export default function ArticleDetails() {
 
       {/* Reading Progress Bar */}
       <div
-        className="fixed top-0 left-0 h-1 bg-linear-to-r from-red to-orange z-50 transition-all duration-150"
+        className="fixed top-0 left-0 h-1 bg-blue z-50 transition-all duration-150"
         style={{ width: `${scrollProgress}%` }}
       />
 
@@ -128,7 +128,7 @@ export default function ArticleDetails() {
               {/* Category Badge */}
               {/* <Link
                 to={`/articles?category=${article.category}`}
-                className="inline-block px-4 py-1.5 bg-red text-white text-sm font-medium rounded-full mb-4 hover:bg-amber-600 transition-colors"
+                className="inline-block px-4 py-1.5 bg-blue text-white text-sm font-medium rounded-full mb-4 hover:bg-amber-600 transition-colors"
               >
                 {article.category}
               </Link> */}
@@ -185,7 +185,7 @@ export default function ArticleDetails() {
               <div className="sticky top-24 flex flex-col gap-3">
                 <button
                   onClick={shareOnWhatsapp}
-                  className="w-10 h-10 rounded-full bg-gray-100 hover:bg-orange hover:text-white flex items-center justify-center transition-all duration-300"
+                  className="w-10 h-10 rounded-full bg-gray-100 hover:bg-blue hover:text-white flex items-center justify-center transition-all duration-300"
                   title="Share on WhatsApp"
                 >
                   <div className="w-5 h-5">
@@ -195,7 +195,7 @@ export default function ArticleDetails() {
 
                 <button
                   onClick={shareOnLinkedIn}
-                  className="w-10 h-10 rounded-full bg-gray-100 hover:bg-orange hover:text-white flex items-center justify-center transition-all duration-300"
+                  className="w-10 h-10 rounded-full bg-gray-100 hover:bg-blue hover:text-white flex items-center justify-center transition-all duration-300"
                   title="Share on LinkedIn"
                 >
                   <div className="w-5 h-5">
@@ -205,7 +205,7 @@ export default function ArticleDetails() {
 
                 <button
                   onClick={shareOnFacebook}
-                  className="w-10 h-10 rounded-full bg-gray-100 hover:bg-orange hover:text-white flex items-center justify-center transition-all duration-300"
+                  className="w-10 h-10 rounded-full bg-gray-100 hover:bg-blue hover:text-white flex items-center justify-center transition-all duration-300"
                   title="Share on Facebook"
                 >
                   <div className="w-5 h-5">
@@ -283,7 +283,7 @@ export default function ArticleDetails() {
 
               <div className="mt-10 pt-8 border-t border-gray-200 flex justify-center">
                 <a href="https://subscribe.elevare.lk/">
-                  <button className="bg-linear-to-r from-red to-orange text-white py-4 px-8 rounded-full font-semibold hover:shadow-lg hover:shadow-red/25 hover:scale-105 transition-all duration-300">
+                  <button className="bg-blue text-white py-4 px-8 rounded-full font-semibold hover:shadow-lg hover:shadow-blue/25 hover:scale-105 transition-all duration-300">
                     Subscribe
                   </button>
                 </a>
@@ -297,7 +297,7 @@ export default function ArticleDetails() {
                 <div className="flex gap-3">
                   <button
                     onClick={shareOnWhatsapp}
-                    className="flex-1 py-3 bg-gray-100 hover:bg-orange hover:text-white rounded-lg flex items-center justify-center gap-2 transition-all"
+                    className="flex-1 py-3 bg-gray-100 hover:bg-blue hover:text-white rounded-lg flex items-center justify-center gap-2 transition-all"
                   >
                     <div className="w-5 h-5">
                       <FaWhatsapp size={16} />
@@ -307,7 +307,7 @@ export default function ArticleDetails() {
 
                   <button
                     onClick={shareOnFacebook}
-                    className="flex-1 py-3 bg-gray-100 hover:bg-orange hover:text-white rounded-lg flex items-center justify-center gap-2 transition-all"
+                    className="flex-1 py-3 bg-gray-100 hover:bg-blue hover:text-white rounded-lg flex items-center justify-center gap-2 transition-all"
                   >
                     <div className="w-5 h-5">
                       <FaFacebook size={16} />
@@ -347,7 +347,7 @@ export default function ArticleDetails() {
                     <div className="flex gap-3">
                       <a
                         href={article.author?.twitter || "#"}
-                        className="text-gray-400 hover:text-orange transition-colors"
+                        className="text-gray-400 hover:text-blue transition-colors"
                       >
                         <svg
                           className="w-5 h-5"
@@ -359,7 +359,7 @@ export default function ArticleDetails() {
                       </a>
                       <a
                         href={article.author?.linkedin || "#"}
-                        className="text-gray-400 hover:text-orange transition-colors"
+                        className="text-gray-400 hover:text-blue transition-colors"
                       >
                         <svg
                           className="w-5 h-5"
@@ -407,7 +407,7 @@ export default function ArticleDetails() {
               <div className="text-center mt-12">
                 <Link
                   to="/articles"
-                  className="inline-flex items-center gap-2 px-8 py-3 bg-gray-900 text-white font-medium rounded-full hover:bg-gray-800 transition-colors"
+                  className="inline-flex items-center gap-2 px-8 py-3 bg-blue text-white font-medium rounded-full hover:bg-slate-800 transition-colors"
                 >
                   View All Articles
                   <div className="w-5 h-5">

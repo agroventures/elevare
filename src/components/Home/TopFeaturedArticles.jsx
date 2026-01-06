@@ -12,7 +12,7 @@ export default function TopFeaturedArticles() {
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-1.5 bg-zinc-200 text-red text-sm font-medium rounded-full mb-4">
+          <span className="inline-block px-4 py-1.5 bg-zinc-200 text-blue text-sm font-medium rounded-full mb-4">
             Featured
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
@@ -21,7 +21,7 @@ export default function TopFeaturedArticles() {
           <p className="text-slate-600 max-w-2xl mx-auto text-lg">
             Discover our most impactful stories, carefully curated for curious minds
           </p>
-          <div className="w-20 h-1 bg-linear-to-r from-red to-orange mx-auto mt-6 rounded-full" />
+          <div className="w-20 h-1 bg-blue mx-auto mt-6 rounded-full" />
         </div>
 
         {/* Articles Grid */}
@@ -49,7 +49,7 @@ export default function TopFeaturedArticles() {
         <div className="text-center mt-14">
           <Link
             to="/articles"
-            className="group inline-flex items-center gap-2 px-8 py-4 bg-black text-white font-medium rounded-full hover:bg-slate-800 transition-all duration-300 hover:shadow-lg hover:shadow-slate-900/25"
+            className="group inline-flex items-center gap-2 px-8 py-4 bg-blue text-white font-medium rounded-full hover:bg-slate-800 transition-all duration-300 hover:shadow-lg hover:shadow-slate-900/25"
           >
             View All Articles
             <div className="w-5 h-5 group-hover:translate-x-1 transition-transform">

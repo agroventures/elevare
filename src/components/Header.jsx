@@ -67,7 +67,7 @@ export default function Header() {
             : "opacity-0 -translate-y-full"
         } ${
           scrolled || !isLandingPage
-            ? "bg-black backdrop-blur-xl shadow-lg shadow-black/10"
+            ? "bg-blue backdrop-blur-xl shadow-lg shadow-black/10"
             : "bg-linear-to-b from-black to-transparent backdrop-blur-sm"
         }`}
         onMouseEnter={() => isLandingPage && setShowHeader(true)}
@@ -100,7 +100,7 @@ export default function Header() {
                 <span
                   className={`relative z-10 text-sm font-medium tracking-wide uppercase transition-colors duration-300 ${
                     isActivePath(nav.path)
-                      ? "text-orange"
+                      ? "text-white"
                       : "text-white/80 group-hover:text-white"
                   }`}
                 >
@@ -112,7 +112,7 @@ export default function Header() {
 
                 {/* Active/Hover underline */}
                 <span
-                  className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-linear-to-r from-red to-orange rounded-full transition-all duration-300 ${
+                  className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-white rounded-full transition-all duration-300 ${
                     isActivePath(nav.path) ? "w-6" : "w-0 group-hover:w-6"
                   }`}
                 />
@@ -124,7 +124,7 @@ export default function Header() {
           <div className="hidden lg:block">
             {/* <Link to="/subscribe"> */}
               <a href="https://subscribe.elevare.lk/">
-              <button className="bg-linear-to-r from-red to-orange text-white py-4 px-8 rounded-full font-semibold cursor-pointer  hover:shadow-lg hover:shadow-red/25 hover:scale-105 transition-all duration-300">
+              <button className="bg-white text-blue py-4 px-8 rounded-full font-semibold cursor-pointer  hover:shadow-lg hover:shadow-white/25 hover:scale-105 transition-all duration-300">
                 Subscribe
               </button>
               </a>
@@ -179,7 +179,7 @@ export default function Header() {
           }`}
         >
           {/* Gradient accent */}
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-1 bg-linear-to-r from-transparent via-orange to-transparent" />
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-1 bg-linear-to-r from-transparent via-blue to-transparent" />
 
           <div className="px-6 py-8 space-y-2">
             {navigation.map((nav, index) => (
@@ -197,20 +197,20 @@ export default function Header() {
                 <div
                   className={`flex items-center gap-4 px-4 py-4 rounded-xl transition-all duration-300 ${
                     isActivePath(nav.path)
-                      ? "bg-linear-to-r from-amber-500/20 to-transparent border-l-2 border-orange"
+                      ? "bg-linear-to-r from-blue/20 to-transparent border-l-2 border-blue"
                       : "hover:bg-white/5"
                   }`}
                 >
                   {/* Decorative dot */}
                   <span
                     className={`w-2 h-2 rounded-full transition-colors duration-300 ${
-                      isActivePath(nav.path) ? "bg-orange" : "bg-white/30"
+                      isActivePath(nav.path) ? "bg-blue" : "bg-white/30"
                     }`}
                   />
                   <span
                     className={`text-lg font-medium tracking-wide ${
                       isActivePath(nav.path)
-                        ? "text-orange"
+                        ? "text-white"
                         : "text-white/90"
                     }`}
                   >
@@ -231,7 +231,7 @@ export default function Header() {
             >
               {/* <Link to="/subscribe" onClick={() => setMobileMenu(false)}> */}
               <a href="https://subscribe.elevare.lk/">
-                <button className="bg-linear-to-r from-red to-orange text-white py-4 px-8 rounded-full font-semibold hover:shadow-lg hover:shadow-red/25 hover:scale-105 transition-all duration-300">
+                <button className="bg-blue text-white py-4 px-8 rounded-full font-semibold hover:shadow-lg hover:shadow-blue/25 hover:scale-105 transition-all duration-300">
                   Subscribe
                 </button>
                 </a>

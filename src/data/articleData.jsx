@@ -2,7 +2,7 @@ export const articleData = [
   {
     id: 1,
     title: "When Paris meets Paradise",
-    volume:1,
+    volume: 1,
     shortTitle: "When Paris meets Paradise",
     slug: "when-paris-meets-paradise",
     excerpt:
@@ -375,6 +375,51 @@ export const articleData = [
   },
   {
     id: 6,
+    title: "The Eternal Love Story of Tiffany Blue",
+    volume: 2,
+    shortTitle: "The Eternal Love Story of Tiffany Blue",
+    slug: "the-eternal-love-story-of-tiffany-blue",
+    excerpt:
+      "To hold a Tiffany Blue Box is to hold a dream, a moment, and a promise that will outlast time...",
+    content: {
+      heading: "",
+      body: (
+        <>
+          <p className="text-justify text-sm pb-4">
+            Few shades in the world carry a story as timeless as Tiffany Blue
+            a colour that whispers of romance, elegance, and devotion. To speak
+            of Tiffany & Co. is to speak of love itself; a legacy born not only
+            of diamonds and design, but of cherished moments sealed in a little
+            blue box. From bridal dreams to tokens of enduring affection,
+            Tiffany's story is a love story between artistry and passion, tradition
+            and innovation, and most of all, between people who choose to celebrate
+            life's most meaningful connections with something beautifully eternal.
+            It is more than a colour. It is a symbol of dreams, aspirations, and
+            the promise of something extraordinary. Tiffany Blue is not just part
+            of the brand, it is the very heartbeat of Tiffany & Co., a chromatic
+            signature of romance that has enchanted the world for over a century.
+            Tiffany envisioned one that would be instantly recognizable one that
+            carried freshness, rarity, and refinement. The shade he chose became
+            more than a design element; it became a declaration of elegance. Over time,
+            Tiffany Blue was standardized as Pantone 1837 Blue named after the year of
+            the House's founding. Today, it is a globally recognized and legally protected
+            trademark, a rare honor reserved for icons of design. Its very exclusivity
+            has made it one of the most powerful symbols in luxury branding, representing not
+            just beauty but trust, prestige, and legacy.
+          </p>
+        </>
+      ),
+    },
+    bottomQuote: "Read the full story only in ELEVARE Volume No. 1",
+    category: "Uncategorized",
+    image: "/images/articles/tiffany_co.webp",
+    featured: false,
+    date: "Sept 30, 2025",
+    author: "Elevare Magazine",
+    tags: [],
+  },
+  {
+    id: 8,
     title: "The Art of Image Management: Inspired by Sabeetha Hettiarachchi",
     volume: 2,
     shortTitle: "The Art of Image Management",
@@ -454,49 +499,6 @@ export const articleData = [
     tags: [],
   },
   {
-    id: 7,
-    title: "Elevate with Akash: A New Era of Conversations on ELEVARE TV",
-    volume: 2,
-    shortTitle: "Elevate with Akash",
-    slug: "elevate-with-akash",
-    excerpt:
-      "In the world of ideas, influence, and innovation, a conversation can spark change, inspire ambition, and open new worlds of thought...",
-    content: {
-      heading: "",
-      body: (
-        <>
-          <p className="text-justify text-sm pb-4">
-            In the world of ideas, influence, and innovation, a conversation can
-            spark change, inspire ambition, and open new worlds of thought.
-            Elevare is proud to announce that its Executive Director, Akash
-            Karunarathne, is stepping into a new dimension of storytelling with
-            the launch of his very own podcast Elevate with Akash.
-            <br />
-            <br />
-            This groundbreaking initiative marks the arrival of Elevare TV, a
-            digital platform where intellect, creativity, and culture converge.
-            More than a podcast, it is a movement, a space where the brightest
-            minds, trailblazers, and visionaries will gather to share their
-            journeys, insights, and perspectives that redefine the way we see
-            business, leadership, lifestyle, and the art of living well. With
-            Akash at the helm, elevate with Akash promises conversations that go
-            beyond the surface. Expect stories that are bold yet authentic,
-            dialogues that challenge conventions, and reflections that resonate
-            with Elevare’s own philosophy: to inspire excellence and celebrate
-            distinction.
-          </p>
-        </>
-      ),
-    },
-    bottomQuote: "Read the full story only in ELEVARE Volume No. 2",
-    category: "Uncategorized",
-    image: "/images/articles/akash.jpg",
-    featured: true,
-    date: "Oct 8, 2025",
-    author: "Elevare Magazine",
-    tags: [],
-  },
-  {
     id: 8,
     title: "The Unveiling of ELEVARE Magazine",
     shortTitle: "The Unveiling of ELEVARE Magazine",
@@ -562,6 +564,331 @@ export const articleData = [
       "/images/articles/elevare-launch/33.webp",
       "/images/articles/elevare-launch/34.webp",
     ],
+    tags: [],
+  },
+  {
+    id: 9,
+    title: "Elevate with Akash: A New Era of Conversations on ELEVARE TV",
+    volume: 2,
+    shortTitle: "Elevate with Akash",
+    slug: "elevate-with-akash",
+    excerpt:
+      "In the world of ideas, influence, and innovation, a conversation can spark change, inspire ambition, and open new worlds of thought...",
+    content: {
+      heading: "",
+      body: (
+        <>
+          <p className="text-justify text-sm pb-4">
+            In the world of ideas, influence, and innovation, a conversation can
+            spark change, inspire ambition, and open new worlds of thought.
+            Elevare is proud to announce that its Executive Director, Akash
+            Karunarathne, is stepping into a new dimension of storytelling with
+            the launch of his very own podcast Elevate with Akash.
+            <br />
+            <br />
+            This groundbreaking initiative marks the arrival of Elevare TV, a
+            digital platform where intellect, creativity, and culture converge.
+            More than a podcast, it is a movement, a space where the brightest
+            minds, trailblazers, and visionaries will gather to share their
+            journeys, insights, and perspectives that redefine the way we see
+            business, leadership, lifestyle, and the art of living well. With
+            Akash at the helm, elevate with Akash promises conversations that go
+            beyond the surface. Expect stories that are bold yet authentic,
+            dialogues that challenge conventions, and reflections that resonate
+            with Elevare’s own philosophy: to inspire excellence and celebrate
+            distinction.
+          </p>
+        </>
+      ),
+    },
+    bottomQuote: "Read the full story only in ELEVARE Volume No. 2",
+    category: "Uncategorized",
+    image: "/images/articles/akash.jpg",
+    featured: true,
+    date: "Oct 8, 2025",
+    author: "Elevare Magazine",
+    tags: [],
+  },
+  {
+    id: 10,
+    title: "Reviving Sri Lanka's Forgotton Spice",
+    volume: 2,
+    shortTitle: "Reviving Sri Lanka's Forgotton Spice",
+    slug: "reviving-sri-lankas-forgotton-spice",
+    excerpt:
+      "Vanilla is often thought of as a common flavor, but few people realize how rare, complex, and labor-intensive...",
+    content: {
+      heading: "",
+      body: (
+        <>
+          <p className="text-justify text-sm pb-4">
+            The world of fashion is constantly evolving, and many brands struggle
+            to remain relevant. Yet, Louis Vuitton has stood the test of time, with
+            a legacy dating back to 1854. Today, it is one of the most recognizable
+            brands in the world, extending far beyond fashion to leather goods, ready
+            to wear, shoes, perfumes, watches, jewellery, and even books. The iconic
+            Louis Vuitton monogram, created in 1896 by Georges Vuitton as a tribute
+            to his father, has become a universal symbol of excellence. Its four motifs
+            a diamond enclosing a four petal flower, its negative silhouette, a
+            circle with a cut out flower, and the interlaced LV initials are instantly
+            familiar even to those less conscious of brands. Yet, behind this global
+            symbol lies a story rooted in humble beginnings.
+            <br />
+            <br />
+            Founded by Akash and Danidu Karunarathne, The Vanilla Shop was born from a
+            simple but powerful idea: to show that Sri Lanka can produce world-class
+            vanilla. They wanted to create a place where people could experience vanilla
+            in its purest form - from the beans to the products made from them - and learn
+            the story behind it. What began as a small venture has quickly grown into a brand
+            that is changing how people see vanilla.
+          </p>
+        </>
+      ),
+    },
+    bottomQuote: "Read the full story only in ELEVARE Volume No. 2",
+    category: "Uncategorized",
+    image: "/images/articles/vanilla_shop.webp",
+    featured: true,
+    date: "Oct 8, 2025",
+    author: "Elevare Magazine",
+    tags: [],
+  },
+  {
+    id: 11,
+    title: "The Story of Louis Vuitton",
+    volume: 2,
+    shortTitle: "The Story of Louis Vuitton",
+    slug: "the-story-of-louis-vuitton",
+    excerpt:
+      "In the world of ideas, influence, and innovation, a conversation can spark change, inspire ambition, and open new worlds of thought...",
+    content: {
+      heading: "",
+      body: (
+        <>
+          <p className="text-md font-bold py-2">The growth of a luxury brand from humble beginnings in 1854</p>
+          <p className="text-justify text-sm pb-4">
+            Vanilla is often thought of as a common flavor, but few people realize
+            how rare, complex, and labor-intensive true vanilla really is. In Sri
+            Lanka, where vanilla grows naturally well, its potential has long gone
+            untapped until The Vanilla Shop came along. This one of a kind outlet is
+            the first in the country to focus entirely on premium vanilla products,
+            aiming to bring real Sri Lankan vanilla to the forefront.
+          </p>
+        </>
+      ),
+    },
+    bottomQuote: "Read the full story only in ELEVARE Volume No. 2",
+    category: "Uncategorized",
+    image: "/images/articles/louis_vuitton.webp",
+    featured: true,
+    date: "Oct 8, 2025",
+    author: "Elevare Magazine",
+    tags: [],
+  },
+  {
+    id: 12,
+    title: "Beneath the Blue: The Business of Beauty at ITHAA Undersea Maldives Restaurant",
+    volume: 3,
+    shortTitle: "Beneath the Blue: The Business of Beauty at ITHAA Undersea Maldives Restaurant",
+    slug: "beneath-the-blue-the-business-of-beauty-at-ithaa-undersea-maldives-restaurant",
+    excerpt:
+      "According to Coco Chanel, Luxury must be comfortable. Otherwise it is not luxury, as ITHAA...",
+    content: {
+      heading: "",
+      body: (
+        <>
+          <p className="text-justify text-sm pb-4">
+            According to Coco Chanel, Luxury must be comfortable. Otherwise it is
+            not luxury, as ITHAA reminds us, luxury is not what you own. It's what
+            takes your breath away! ITHAA in the Maldives stands for the world's
+            first all-glass undersea restaurant, located at the Conrad Maldives
+            Rangali Island. The postcard beauty of the islands, fine white sand
+            and palm trees bowing to the sea in the rays of the setting sun, is how
+            a dream, luxurious vacation can look like, and the Maldives is a true
+            synonym for a paradise vacation.
+            <br />
+            <br />
+            When it first opened its doors to the world in 2005, ITHAA didn't just
+            make headlines; it made history. Conceived by visionary designers from
+            New Zealand-based M.J. Murphy Ltd. and crafted in Singapore before being
+            submerged into place, ITHAA remains the world's first all-glass undersea
+            restaurant. Two decades later, it continues to stand as an emblem of
+            timeless luxury, architectural mastery, and a forward-thinking business
+            model that fuses hospitality, design, and environmental consciousness.
+          </p>
+        </>
+      ),
+    },
+    bottomQuote: "Read the full story only in ELEVARE Volume No. 3",
+    category: "Uncategorized",
+    image: "/images/articles/under_water.webp",
+    featured: true,
+    date: "Dec 12, 2025",
+    author: "Elevare Magazine",
+    tags: [],
+  },
+  {
+    id: 13,
+    title: "Agro Ventures Vanilla Trails -  Sri Lanka's Most Authentic Agri-Tourism Odyssey",
+    volume: 3,
+    shortTitle: "Agro Ventures Vanilla Trails -  Sri Lanka's Most Authentic Agri-Tourism Odyssey",
+    slug: "agro-ventures-vanilla-trails-sri-lankas-most-authentic-agri-tourism-odyssey",
+    excerpt:
+      "In the world of ideas, influence, and innovation, a conversation can spark change, inspire ambition, and open new worlds of thought...",
+    content: {
+      heading: "",
+      body: (
+        <>
+          <p className="text-justify text-sm pb-4">
+            Hidden deep within the emerald mountains of Matale, where the air carries
+            the perfume of forests and the whisper of ancient kingdoms, Sri Lanka's
+            most enchanting agri-tourism journey is unfolding. It is a world where
+            time slows, senses awaken, and every visitor becomes part of a story older
+            than spice itself.
+            <br />
+            <br />
+            Welcome to Agroventures Vanilla Trails a 1,200-acre living paradise where
+            vanilla vines climb old trees, toddy tappers greet the sunrise, and the true
+            rural heart of Sri Lanka beats with timeless grace.
+          </p>
+          <br />
+          <p className="text-justify text-xm italic font-semibold">
+            This is not a resort. This is not a plantation. This is a destination born
+            from nature, culture, and the people of the land.
+          </p>
+        </>
+      ),
+    },
+    bottomQuote: "Read the full story only in ELEVARE Volume No. 3",
+    category: "Uncategorized",
+    image: "/images/articles/agro_vanilla_trails.jpg",
+    featured: true,
+    date: "Dec 12, 2025",
+    author: "Elevare Magazine",
+    tags: [],
+  },
+  {
+    id: 14,
+    title: "The Birkin Bag - Where Luxury Meets Legend",
+    volume: 3,
+    shortTitle: "The Birkin Bag - Where Luxury Meets Legend",
+    slug: "the-birkin-bag-where-luxury-meets-legend",
+    excerpt:
+      "In the world of ideas, influence, and innovation, a conversation can spark change, inspire ambition, and open new worlds of thought...",
+    content: {
+      heading: "",
+      body: (
+        <>
+          <p className="text-justify text-sm pb-4">
+            It's not just a handbag. It's a story stitched in time. The Hermès Birkin
+            is the world's most coveted accessory, celebrated not only for its
+            craftsmanship but for the mystique that surrounds it. Its story began aboard
+            a Paris-London flight in 1983, when actress Jane Birkin met Jean-Louis Dumas,
+            then CEO of Hermès. After her belongings spilled from her straw bag, she wished
+            aloud for something more practical yet chic. Inspired, Dumas designed a bag
+            worthy of her name and thus, the Birkin was born. Every Birkin is handcrafted by
+            a single artisan in France, a process that takes days of meticulous artistry.
+            Made from the finest leathers, from supple Togo to exotic crocodile and ostrich
+            and adorned with hardware of gold, palladium, or even diamonds, each bag is a
+            masterpiece of patience and precision. But owning one isn't a matter of money
+            alone; it's about exclusivity and relationship. Birkins aren't displayed in
+            Hermès boutiques, and only selected clients are offered the chance to purchase.
+            That air of mystery has elevated the Birkin from a luxury item to a global status.
+          </p>
+        </>
+      ),
+    },
+    bottomQuote: "Read the full story only in ELEVARE Volume No. 3",
+    category: "Uncategorized",
+    image: "/images/articles/birkin_bag.webp",
+    featured: true,
+    date: "Dec 12, 2025",
+    author: "Elevare Magazine",
+    tags: [],
+  },
+  {
+    id: 15,
+    title: "Ceylon Cinnamon - Sri Lanka's Golden Spice of Christmas",
+    volume: 3,
+    shortTitle: "Ceylon Cinnamon - Sri Lanka's Golden Spice of Christmas",
+    slug: "ceylon-cinnamon-sri-lankas-golden-spice-of-christmas",
+    excerpt:
+      "From ancient trade routes to luxury dining tables, the world's finest cinnamon remains at the heart of festive indulgence...",
+    content: {
+      heading: "",
+      body: (
+        <>
+          <p className="text-sm font-semibold italic py-2">From ancient trade routes to luxury dining tables, the world's finest cinnamon remains at the heart of festive indulgence.</p>
+          <br />
+          <p className="text-md font-bold py-2">The Scent of Prestige: How Ceylon Cinnamon Elevates Christmas and Global Luxury Markets</p>
+          <p className="text-justify text-sm pb-4">
+            Few aromas define Christmas like cinnamon, curling through mulled wine, puddings,
+            and spiced candles, conjuring nostalgia and celebration. Yet few pause to wonder
+            where this fragrance begins. The answer lies on a lush island in the Indian Ocean:
+            Sri Lanka, once Ceylon, the birthplace and only home of true cinnamon (Cinnamomum verum).
+            Along its sunlit coastal belt, an ancient craft still thrives, perfuming empires and
+            inspiring voyages for over two millennia.
+            <br />
+            <br />
+            Today, Ceylon Cinnamon has evolved from royal treasure to global signature, a symbol
+            of refinement found in Miche- lin-starred kitchens, haute couture perfumes, artisanal
+            chocolates, and wellness rituals. Each December, when Christmas awakens across continents,
+            it is this golden spice that ties together indulgence, memory, and spirit.
+          </p>
+        </>
+      ),
+    },
+    bottomQuote: "Read the full story only in ELEVARE Volume No. 3",
+    category: "Uncategorized",
+    image: "/images/articles/ceylon_cinnamon.webp",
+    featured: true,
+    date: "Dec 12, 2025",
+    author: "Elevare Magazine",
+    tags: [],
+  },
+  {
+    id: 16,
+    title: "Beyond Relief. A Leadership Responsibility in Rebuilding Sri Lanka",
+    volume: 3,
+    shortTitle: "Beyond Relief. A Leadership Responsibility in Rebuilding Sri Lanka",
+    slug: "beyond-relief-a-leadership-responsibility-in-rebuilding-sri-lanka",
+    excerpt:
+      " When floods strike our motherland, the damage cannot be measured only in submerged roads...",
+    content: {
+      heading: "",
+      body: (
+        <>
+          <p className="text-justify text-sm pb-4">
+            When floods strike our motherland, the damage cannot be measured only in submerged roads,
+            disrupted transport, or lost property. The deeper impact is felt inside homes, workplaces,
+            and communities, where stability, confidence, and years of effort are suddenly shaken.
+            <br />
+            In moments like these, leadership is tested. Not by the speed of response alone, but by
+            the clarity of purpose and the integrity with which recovery is approached.
+          </p>
+          <br/>
+          <br/>
+          <p className="text-md font-bold py-2">From Crisis to Conscious Action</p>
+          <p className="text-justify text-sm pb-4">
+            When floods strike our motherland, the damage cannot be measured only in submerged roads,
+            disrupted transport, or lost property. The deeper impact is felt inside homes, workplaces,
+            and communities, where stability, confidence, and years of effort are suddenly shaken.
+            <br />
+            Disasters demand urgency, but rebuilding demands thoughtfulness. While immediate relief is
+            essential, true recovery requires sustained commitment. Families need more than temporary
+            assistance; they need the assurance that their livelihoods, dignity, and future security matter.
+            What affects one community today inevitably shapes the strength of the nation tomorrow. Recovery,
+            therefore, must be viewed not as an isolated intervention, but as a collective national responsibility.
+          </p>
+        </>
+      ),
+    },
+    bottomQuote: "Read the full story only in ELEVARE Volume No. 3",
+    category: "Uncategorized",
+    image: "/images/articles/rebuild_sri_lanka.webp",
+    featured: true,
+    date: "Dec 12, 2025",
+    author: "Elevare Magazine",
     tags: [],
   },
 ];

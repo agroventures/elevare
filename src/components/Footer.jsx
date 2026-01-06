@@ -18,7 +18,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative w-full bg-black text-white overflow-hidden">
+    <footer className="relative w-full bg-blue text-white overflow-hidden">
       {/* Main Footer Content */}
       <div className="relative max-w-6xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
@@ -39,12 +39,12 @@ export default function Footer() {
             </p>
 
             <div className="flex items-start gap-3 text-sm text-zinc-400 mb-4">
-              <HiOutlineLocationMarker className="text-red text-xl shrink-0 mt-0.5" />
+              <HiOutlineLocationMarker className="text-white text-xl shrink-0 mt-0.5" />
               <span>48, Sir Marcus Fernando Mawatha, Colombo 07</span>
             </div>
 
             <div className="flex items-center gap-3 text-sm text-zinc-400">
-              <HiOutlineMail className="text-red text-xl shrink-0" />
+              <HiOutlineMail className="text-white text-xl shrink-0" />
               <a
                 href="mailto:info@elevare.lk"
                 className="hover:text-white transition-colors"
@@ -57,7 +57,7 @@ export default function Footer() {
           {/* Quick Links */}
           <div>
             <h3 className="text-lg font-bold mb-6 flex items-center gap-2">
-              <span className="w-8 h-0.5 bg-linear-to-r from-red to-orange rounded-full" />
+              <span className="w-8 h-0.5 bg-white rounded-full" />
               Quick Links
             </h3>
             <ul className="space-y-4">
@@ -72,7 +72,7 @@ export default function Footer() {
                     to={link.path}
                     className="group flex items-center gap-2 text-zinc-400 hover:text-white transition-colors"
                   >
-                    <span className="w-0 group-hover:w-4 h-0.5 bg-red rounded-full transition-all duration-300" />
+                    <span className="w-0 group-hover:w-4 h-0.5 bg-white rounded-full transition-all duration-300" />
                     {link.name}
                   </Link>
                 </li>
@@ -83,7 +83,7 @@ export default function Footer() {
           {/* Recent Articles */}
           <div>
             <h3 className="text-lg font-bold mb-6 flex items-center gap-2">
-              <span className="w-8 h-0.5 bg-linear-to-r from-red to-orange rounded-full" />
+              <span className="w-8 h-0.5 bg-white rounded-full" />
               Recent Articles
             </h3>
             <ul className="space-y-4">
@@ -93,7 +93,7 @@ export default function Footer() {
                     <h4 className="text-zinc-400 text-sm line-clamp-2 group-hover:text-white transition-colors mb-1">
                       {article.shortTitle}
                     </h4>
-                    <span className="text-xs text-zinc-600 group-hover:text-red transition-colors">
+                    <span className="text-xs text-zinc-600 group-hover:text-white transition-colors">
                       {article.date.toLocaleString("en-US", {
                         month: "short",
                         day: "numeric",
@@ -109,7 +109,7 @@ export default function Footer() {
           {/* Connect With Us */}
           <div>
             <h3 className="text-lg font-bold mb-6 flex items-center gap-2">
-              <span className="w-8 h-0.5 bg-linear-to-r from-red to-orange rounded-full" />
+              <span className="w-8 h-0.5 bg-white rounded-full" />
               Connect With Us
             </h3>
 
@@ -123,17 +123,17 @@ export default function Footer() {
                 href="https://www.facebook.com/profile.php?id=61576325729481"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group w-11 h-11 bg-zinc-800 rounded-xl flex items-center justify-center border border-zinc-700 hover:bg-linear-to-r hover:from-red hover:to-orange hover:border-transparent transition-all duration-300"
+                className="group w-11 h-11 bg-zinc-800 rounded-xl flex items-center justify-center border border-zinc-700 hover:bg-white hover:border-transparent transition-all duration-300"
               >
-                <BsFacebook className="text-lg text-zinc-400 group-hover:text-white transition-colors" />
+                <BsFacebook className="text-lg text-zinc-400 group-hover:text-blue transition-colors" />
               </a>
               <a
                 href="https://www.instagram.com/elevare_lk/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group w-11 h-11 bg-zinc-800 rounded-xl flex items-center justify-center border border-zinc-700 hover:bg-linear-to-r hover:from-red hover:to-orange hover:border-transparent transition-all duration-300"
+                className="group w-11 h-11 bg-zinc-800 rounded-xl flex items-center justify-center border border-zinc-700 hover:bg-white hover:border-transparent transition-all duration-300"
               >
-                <BsInstagram className="text-lg text-zinc-400 group-hover:text-white transition-colors" />
+                <BsInstagram className="text-lg text-zinc-400 group-hover:text-blue transition-colors" />
               </a>
             </div>
           </div>
@@ -149,7 +149,7 @@ export default function Footer() {
               © {currentYear} {" "}
               <Link
                 to="/"
-                className="text-white hover:text-red transition-colors"
+                className="text-white hover:text-white transition-colors"
               >
                 Elevare.lk
               </Link>
@@ -183,7 +183,7 @@ export default function Footer() {
       {/* Back to Top Button */}
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        className="absolute bottom-24 right-6 w-12 h-12 bg-linear-to-r from-red to-orange rounded-full flex items-center justify-center shadow-lg shadow-red/25 hover:scale-110 transition-transform duration-300"
+        className="absolute bottom-24 right-6 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg shadow-white/25 hover:scale-110 transition-transform duration-300"
       >
         <svg
           className="w-5 h-5 text-white"

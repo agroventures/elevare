@@ -96,8 +96,8 @@ export default function Team() {
         >
           <defs>
             <linearGradient id="circleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#f97316" />
-              <stop offset="100%" stopColor="#ef4444" />
+              <stop offset="0%" stopColor="#0C334C" />
+              <stop offset="100%" stopColor="#0C334C" />
             </linearGradient>
           </defs>
           <circle cx="100" cy="100" r="90" fill="none" stroke="url(#circleGradient)" strokeWidth="0.5" />
@@ -113,8 +113,8 @@ export default function Team() {
         >
           <defs>
             <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#f97316" />
-              <stop offset="100%" stopColor="#ef4444" />
+              <stop offset="0%" stopColor="#0C334C" />
+              <stop offset="100%" stopColor="#0C334C" />
             </linearGradient>
           </defs>
           <path
@@ -147,8 +147,8 @@ export default function Team() {
         <svg className="absolute top-1/4 left-10 w-32 h-32 opacity-[0.1]" viewBox="0 0 100 100">
           <defs>
             <linearGradient id="dotGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#f97316" />
-              <stop offset="100%" stopColor="#ef4444" />
+              <stop offset="0%" stopColor="#0C334C" />
+              <stop offset="100%" stopColor="#0C334C" />
             </linearGradient>
           </defs>
           {[...Array(5)].map((_, i) =>
@@ -171,8 +171,8 @@ export default function Team() {
         >
           <defs>
             <linearGradient id="triangleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#f97316" />
-              <stop offset="100%" stopColor="#ef4444" />
+              <stop offset="0%" stopColor="#0C334C" />
+              <stop offset="100%" stopColor="#0C334C" />
             </linearGradient>
           </defs>
           <polygon
@@ -196,8 +196,8 @@ export default function Team() {
         >
           <defs>
             <linearGradient id="hexGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#f97316" />
-              <stop offset="100%" stopColor="#ef4444" />
+              <stop offset="0%" stopColor="#0C334C" />
+              <stop offset="100%" stopColor="#0C334C" />
             </linearGradient>
           </defs>
           <polygon
@@ -215,8 +215,8 @@ export default function Team() {
         >
           <defs>
             <linearGradient id="curveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#f97316" />
-              <stop offset="100%" stopColor="#ef4444" />
+              <stop offset="0%" stopColor="#0C334C" />
+              <stop offset="100%" stopColor="#0C334C" />
             </linearGradient>
           </defs>
           <path d="M90,10 Q10,50 90,90" fill="none" stroke="url(#curveGradient)" strokeWidth="1" />
@@ -225,15 +225,15 @@ export default function Team() {
         </svg>
 
         {/* Plus Signs Scattered */}
-        <div className="absolute top-20 left-1/3 text-orange-400/20 text-4xl font-thin">+</div>
-        <div className="absolute top-40 right-1/3 text-red-400/20 text-2xl font-thin">+</div>
-        <div className="absolute bottom-40 left-1/4 text-orange-400/15 text-3xl font-thin">+</div>
-        <div className="absolute bottom-60 right-1/4 text-red-400/10 text-5xl font-thin">+</div>
+        <div className="absolute top-20 left-1/3 text-blue/20 text-4xl font-thin">+</div>
+        <div className="absolute top-40 right-1/3 text-blue/20 text-2xl font-thin">+</div>
+        <div className="absolute bottom-40 left-1/4 text-blue/15 text-3xl font-thin">+</div>
+        <div className="absolute bottom-60 right-1/4 text-blue/10 text-5xl font-thin">+</div>
 
         {/* Small Floating Circles */}
-        <div className="absolute top-32 right-40 w-4 h-4 rounded-full bg-linear-to-r from-orange-400 to-red-400 opacity-20 animate-bounce" style={{ animationDelay: '0s', animationDuration: '3s' }} />
-        <div className="absolute top-60 left-32 w-3 h-3 rounded-full bg-linear-to-r from-orange-400 to-red-400 opacity-15 animate-bounce" style={{ animationDelay: '1s', animationDuration: '4s' }} />
-        <div className="absolute bottom-48 right-60 w-2 h-2 rounded-full bg-linear-to-r from-orange-400 to-red-400 opacity-25 animate-bounce" style={{ animationDelay: '2s', animationDuration: '3.5s' }} />
+        <div className="absolute top-32 right-40 w-4 h-4 rounded-full bg-blue opacity-20 animate-bounce" style={{ animationDelay: '0s', animationDuration: '3s' }} />
+        <div className="absolute top-60 left-32 w-3 h-3 rounded-full bg-blue opacity-15 animate-bounce" style={{ animationDelay: '1s', animationDuration: '4s' }} />
+        <div className="absolute bottom-48 right-60 w-2 h-2 rounded-full bg-blue opacity-25 animate-bounce" style={{ animationDelay: '2s', animationDuration: '3.5s' }} />
       </div>
 
       <Header />
@@ -253,7 +253,7 @@ export default function Team() {
           onMouseLeave={() => setIsPaused(false)}
         >
           {/* Circular Glow Background */}
-          <div className="absolute w-96 h-96 rounded-full bg-linear-to-r from-orange-400 to-red-500 blur-3xl opacity-20 animate-pulse" />
+          <div className="absolute w-96 h-96 rounded-full bg-blue blur-3xl opacity-20 animate-pulse" />
 
           {/* Cards Container */}
           <div
@@ -276,16 +276,16 @@ export default function Team() {
           {/* Navigation Arrows */}
           <button
             onClick={prevSlide}
-            className="absolute left-4 z-50 p-3 rounded-full bg-white border border-gray-200 shadow-lg hover:bg-gray-50 hover:border-orange-300 transition-all hover:scale-110 group"
+            className="absolute left-4 z-50 p-3 rounded-full bg-white border border-gray-200 shadow-lg hover:bg-gray-50 hover:border-blue transition-all hover:scale-110 group"
           >
-            <BiChevronLeft size={24} className="text-gray-700 group-hover:text-orange-500 transition-colors" />
+            <BiChevronLeft size={24} className="text-gray-700 group-hover:text-blue transition-colors" />
           </button>
 
           <button
             onClick={nextSlide}
-            className="absolute right-4 z-50 p-3 rounded-full bg-white border border-gray-200 shadow-lg hover:bg-gray-50 hover:border-orange-300 transition-all hover:scale-110 group"
+            className="absolute right-4 z-50 p-3 rounded-full bg-white border border-gray-200 shadow-lg hover:bg-gray-50 hover:border-blue transition-all hover:scale-110 group"
           >
-            <BiChevronRight size={24} className="text-gray-700 group-hover:text-orange-500 transition-colors" />
+            <BiChevronRight size={24} className="text-gray-700 group-hover:text-blue transition-colors" />
           </button>
         </div>
 
@@ -299,7 +299,7 @@ export default function Team() {
                 transition-all duration-300 rounded-full
                 ${
                   index === activeIndex
-                    ? "w-8 h-2 bg-linear-to-r from-orange-400 to-red-500"
+                    ? "w-8 h-2 bg-blue"
                     : "w-2 h-2 bg-gray-300 hover:bg-gray-400"
                 }
               `}
@@ -321,15 +321,15 @@ export default function Team() {
             </h3>
 
             {/* Member Role/Designation */}
-            <p className="text-lg font-semibold bg-linear-to-r from-orange-500 to-red-500 bg-clip-text text-transparent mb-6">
+            <p className="text-lg font-semibold bg-blue bg-clip-text text-transparent mb-6">
               {currentMember.designation}
             </p>
 
             {/* Decorative Line */}
             <div className="flex items-center justify-center gap-3 mb-6">
-              <div className="h-px w-16 bg-linear-to-r from-transparent to-orange-400" />
-              <div className="w-2 h-2 rounded-full bg-linear-to-r from-orange-400 to-red-500" />
-              <div className="h-px w-16 bg-linear-to-l from-transparent to-red-400" />
+              <div className="h-px w-16 bg-linear-to-r from-transparent to-blue" />
+              <div className="w-2 h-2 rounded-full bg-blue" />
+              <div className="h-px w-16 bg-linear-to-l from-transparent to-blue" />
             </div>
 
             {/* Member Description */}
@@ -344,7 +344,7 @@ export default function Team() {
                 {currentMember.skills.map((skill, idx) => (
                   <span
                     key={idx}
-                    className="px-4 py-1.5 text-sm bg-linear-to-r from-orange-50 to-red-50 text-orange-600 rounded-full border border-orange-200"
+                    className="px-4 py-1.5 text-sm bg-blue rounded-full border border-blue"
                   >
                     {skill}
                   </span>

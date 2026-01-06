@@ -6,8 +6,8 @@ export default function SubscriptionCancel() {
   return (
     <div className="min-h-screen flex items-center justify-center px-4">
       <div className="text-center max-w-md">
-        <div className="w-20 h-20 mx-auto bg-red-100 rounded-full flex items-center justify-center">
-          <BiXCircle className="w-12 h-12 text-red-600" />
+        <div className="w-20 h-20 mx-auto bg-slate-800 rounded-full flex items-center justify-center">
+          <BiXCircle className="w-12 h-12 text-blue" />
         </div>
         
         <h1 className="mt-6 text-3xl font-bold text-gray-900">

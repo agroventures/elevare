@@ -39,16 +39,16 @@ export default function About() {
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
             <div className="flex-1 text-center lg:text-left">
               <div className="flex items-center justify-center lg:justify-start gap-3 mb-6">
-                <div className="h-px w-8 bg-linear-to-r from-red to-orange" />
-                <span className="text-red text-sm font-medium tracking-[0.2em] uppercase">
+                <div className="h-px w-8 bg-blue" />
+                <span className="text-blue text-sm font-medium tracking-[0.2em] uppercase">
                   Our Story
                 </span>
-                <div className="h-px w-8 bg-linear-to-r from-orange to-red" />
+                <div className="h-px w-8 bg-blue" />
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-light tracking-wide mb-6">
                 About{" "}
-                <span className="font-semibold bg-linear-to-r from-red to-orange bg-clip-text text-transparent">
+                <span className="font-semibold bg-blue bg-clip-text text-transparent">
                   ELEVARE
                 </span>
               </h1>
@@ -61,7 +61,7 @@ export default function About() {
 
               {/* Scroll indicator */}
               <div className="hidden lg:flex items-center gap-3 mt-12">
-                <div className="w-px h-12 bg-linear-to-b from-red to-transparent" />
+                <div className="w-px h-12 bg-linear-to-b from-blue to-transparent" />
                 <span className="text-xs tracking-widest uppercase">
                   Scroll to explore
                 </span>
@@ -73,8 +73,8 @@ export default function About() {
               {/* Main card */}
               <div className="relative w-52 h-64 lg:w-64 lg:h-80 bg-black rounded-2xl flex items-center justify-center border border-white/10 shadow-2xl overflow-hidden">
                 {/* Corner accents */}
-                <div className="absolute top-4 left-4 w-10 h-10 border-l-2 border-t-2 border-red/40 rounded-tl-xl" />
-                <div className="absolute bottom-4 right-4 w-10 h-10 border-r-2 border-b-2 border-red/40 rounded-br-xl" />
+                <div className="absolute top-4 left-4 w-10 h-10 border-l-2 border-t-2 border-blue/40 rounded-tl-xl" />
+                <div className="absolute bottom-4 right-4 w-10 h-10 border-r-2 border-b-2 border-blue/40 rounded-br-xl" />
 
                 {/* Logo */}
                 <img
@@ -85,7 +85,7 @@ export default function About() {
               </div>
 
               {/* Floating elements */}
-              <div className="absolute -top-3 -right-3 w-6 h-6 bg-red rounded-full flex items-center justify-center shadow-lg shadow-red/50">
+              <div className="absolute -top-3 -right-3 w-6 h-6 bg-blue rounded-full flex items-center justify-center shadow-lg shadow-blue/50">
                 <span className="text-white text-xs">✦</span>
               </div>
             </div>
@@ -99,37 +99,37 @@ export default function About() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             {/* Left: Decorative Quote */}
             <div className="relative">
-              <div className="absolute -top-4 -left-4 text-8xl text-red/20 font-serif">
+              <div className="absolute -top-4 -left-4 text-8xl text-blue/20 font-serif">
                 "
               </div>
               <div className="relative bg-linear-to-br from-slate-50 to-white rounded-2xl p-8 lg:p-12 border border-slate-100 shadow-xl shadow-slate-200/50">
                 <p className="text-xl lg:text-2xl text-slate-700 leading-relaxed font-light italic">
                   Business is not just about numbers—it's about{" "}
-                  <span className="text-red font-medium not-italic">
+                  <span className="text-blue font-medium not-italic">
                     people
                   </span>
                   ,{" "}
-                  <span className="text-red font-medium not-italic">
+                  <span className="text-blue font-medium not-italic">
                     stories
                   </span>
                   ,{" "}
-                  <span className="text-red font-medium not-italic">
+                  <span className="text-blue font-medium not-italic">
                     memory
                   </span>{" "}
                   and{" "}
-                  <span className="text-red font-medium not-italic">
+                  <span className="text-blue font-medium not-italic">
                     meaning
                   </span>
                   .
                 </p>
                 <div className="mt-6 flex items-center gap-3">
-                  <div className="h-px flex-1 bg-linear-to-r from-red to-transparent" />
+                  <div className="h-px flex-1 bg-linear-to-r from-blue to-transparent" />
                   <span className="text-sm text-slate-500 tracking-wider uppercase">
                     Our Philosophy
                   </span>
                 </div>
               </div>
-              <div className="absolute -bottom-4 -right-4 text-8xl text-red/20 font-serif rotate-180">
+              <div className="absolute -bottom-4 -right-4 text-8xl text-blue/20 font-serif rotate-180">
                 "
               </div>
             </div>
@@ -137,7 +137,7 @@ export default function About() {
             {/* Right: Description */}
             <div className="space-y-6">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-xl bg-linear-to-br from-red to-orange flex items-center justify-center shadow-lg shadow-red/25">
+                <div className="w-12 h-12 rounded-xl bg-blue flex items-center justify-center shadow-lg shadow-blue/25">
                   <span className="text-white text-xl">◈</span>
                 </div>
                 <h2 className="text-2xl lg:text-3xl font-semibold text-slate-800">

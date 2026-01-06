@@ -13,14 +13,14 @@ export default function EMagazinePreview() {
     <>
       <section className="relative py-24 px-4 bg-linear-to-b from-white to-zinc-100 overflow-hidden">
         {/* Background Decorations */}
-        <div className="absolute top-20 left-10 w-72 h-72 bg-red/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-10 right-10 w-72 h-72 bg-orange/5 rounded-full blur-3xl" />
+        <div className="absolute top-20 left-10 w-72 h-72 bg-blue/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-10 right-10 w-72 h-72 bg-blue/5 rounded-full blur-3xl" />
 
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
             {/* Left Content */}
             <div className="flex-1 text-center lg:text-left">
-              <span className="inline-flex items-center gap-2 px-4 py-2 bg-white text-red text-sm font-medium rounded-full mb-6 border border-zinc-200 shadow-sm">
+              <span className="inline-flex items-center gap-2 px-4 py-2 bg-white text-blue text-sm font-medium rounded-full mb-6 border border-zinc-200 shadow-sm">
                 <div className="w-4 h-4">
                   <GiNewspaper size={20} />
                 </div>
@@ -93,7 +93,7 @@ export default function EMagazinePreview() {
               {/* CTA Button */}
               <button
                 onClick={() => setOpen(true)}
-                className="group inline-flex items-center gap-3 bg-linear-to-r from-red to-orange text-white py-4 px-8 rounded-full font-semibold shadow-lg shadow-red/25 hover:shadow-xl hover:shadow-red/30 hover:scale-105 transition-all duration-300 cursor-pointer"
+                className="group inline-flex items-center gap-3 bg-blue text-white py-4 px-8 rounded-full font-semibold shadow-lg shadow-blue/25 hover:shadow-xl hover:shadow-blue/30 hover:scale-105 transition-all duration-300 cursor-pointer"
               >
                 Preview Free Pages
                 <div className="w-5 h-5 group-hover:translate-x-1 transition-transform">
@@ -106,7 +106,7 @@ export default function EMagazinePreview() {
             <div className="flex-1 flex justify-center">
               <div className="relative group">
                 {/* Glow Effect */}
-                <div className="absolute -inset-4 bg-linear-to-r from-red/20 to-orange/20 rounded-2xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute -inset-4 bg-linear-to-r from-blue/20 to-blue/20 rounded-2xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                 {/* Magazine Image */}
                 <div className="relative">
@@ -119,7 +119,7 @@ export default function EMagazinePreview() {
                   </div>
 
                   {/* Floating Badge */}
-                  <div className="absolute -top-4 -right-4 bg-linear-to-r from-red to-orange text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg animate-pulse">
+                  <div className="absolute -top-4 -right-4 bg-blue text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg animate-pulse">
                     FREE
                   </div>
 
@@ -129,7 +129,7 @@ export default function EMagazinePreview() {
                     className="absolute inset-3 flex items-center justify-center bg-black/0 hover:bg-black/30 rounded-xl cursor-pointer transition-all duration-300 group/play"
                   >
                     <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center shadow-xl opacity-0 group-hover/play:opacity-100 scale-50 group-hover/play:scale-100 transition-all duration-300">
-                      <div className="w-6 h-6 text-red">
+                      <div className="w-6 h-6 text-blue">
                         <BiPlayCircle size={25} />
                       </div>
                     </div>
@@ -164,7 +164,7 @@ export default function EMagazinePreview() {
 
               <button
                 onClick={() => setOpen(false)}
-                className="w-10 h-10 rounded-full bg-zinc-100 flex items-center justify-center text-zinc-500 hover:bg-red hover:text-white transition-all duration-300"
+                className="w-10 h-10 rounded-full bg-zinc-100 flex items-center justify-center text-zinc-500 hover:bg-blue hover:text-white transition-all duration-300"
               >
                 <div className="w-5 h-5">
                   <CgClose size={20} />
@@ -201,7 +201,7 @@ export default function EMagazinePreview() {
             </div>
 
             {/* Modal Footer */}
-            <div className="p-6 bg-linear-to-r from-zinc-50 to-zinc-100 border-t border-zinc-100">
+            <div className="p-6 bg-linear-to-r from-zinc-200 to-zinc-300 border-t border-zinc-100">
               <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div>
                   <h4 className="text-lg font-bold text-black">
@@ -216,7 +216,7 @@ export default function EMagazinePreview() {
                 {/* <Link
                   to="/subscribe" */}
                 <a href="https://subscribe.elevare.lk/"
-                  className="inline-flex items-center gap-2 bg-linear-to-r from-red to-orange text-white py-3 px-8 rounded-full font-semibold shadow-lg shadow-red/25 hover:shadow-xl hover:scale-105 transition-all duration-300 whitespace-nowrap"
+                  className="inline-flex items-center gap-2 bg-white text-blue py-3 px-8 rounded-full font-semibold shadow-lg shadow-white/25 hover:shadow-xl hover:scale-105 transition-all duration-300 whitespace-nowrap"
                 >
                   Subscribe Now
                   <div className="w-5 h-5">
