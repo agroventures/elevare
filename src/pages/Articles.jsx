@@ -186,7 +186,7 @@ export default function Articles() {
                 <div className="text-center mt-12">
                   <button
                     onClick={() => setVisibleCount(filteredArticles.length)}
-                    className="px-8 py-3 bg-gray-900 text-white font-medium rounded-full hover:bg-gray-800 transition-colors duration-300"
+                    className="px-8 py-3 bg-blue text-white font-medium rounded-full hover:bg-gray-800 transition-colors duration-300"
                   >
                     Load Older Articles
                   </button>
