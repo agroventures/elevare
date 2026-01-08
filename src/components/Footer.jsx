@@ -147,8 +147,7 @@ export default function Footer() {
             {/* Copyright */}
             <p className="text-zinc-500 text-sm text-center md:text-left">
               © {currentYear} {" "}
-              <a href="https://ventrax.lk">Ventrax.lk</a>
-              . All rights reserved.
+              <a href="https://ventrax.lk">Ventrax.lk</a>. All rights reserved.
             </p>
 
             <div className="flex flex-wrap justify-center items-center gap-6 text-sm">
