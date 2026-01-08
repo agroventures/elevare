@@ -147,12 +147,7 @@ export default function Footer() {
             {/* Copyright */}
             <p className="text-zinc-500 text-sm text-center md:text-left">
               © {currentYear} {" "}
-              <Link
-                to="/"
-                className="text-white hover:text-white transition-colors"
-              >
-                Elevare.lk
-              </Link>
+              <a href="https://ventrax.lk">Ventrax.lk</a>
               . All rights reserved.
             </p>
 
