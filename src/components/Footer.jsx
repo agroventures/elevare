@@ -146,8 +146,8 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             {/* Copyright */}
             <p className="text-zinc-500 text-sm text-center md:text-left">
-              © {currentYear} {" "}
-              <a className="font-semibold hover:underline" href="https://ventrax.lk">Ventrax.lk</a>. All rights reserved.
+              © {currentYear} {" "} EELEVARE.lk. All rights reserved. Developed by 
+              <a className="font-semibold hover:underline" href="https://ventrax.lk">Ventrax.lk</a>.
             </p>
 
             <div className="flex flex-wrap justify-center items-center gap-6 text-sm">
