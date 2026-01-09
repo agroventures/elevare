@@ -145,11 +145,22 @@ export default function Footer() {
         <div className="max-w-6xl mx-auto px-6 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             {/* Copyright */}
-            <p className="text-zinc-500 text-sm text-center md:text-left">
-              © {currentYear} {" "} EELEVARE.lk. All rights reserved. Developed by 
-              <a className="font-semibold hover:underline" href="https://ventrax.lk">Ventrax.lk</a>.
+            <p className="text-sm text-zinc-500 text-center md:text-left leading-relaxed">
+              © {currentYear}{" "}
+              <span className="font-medium text-zinc-400">
+                ELEVARE.lk
+              </span>
+              . All rights reserved. Developed by{" "}
+              <a
+                href="https://ventrax.lk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-primary-500 hover:text-primary-400 
+                           underline underline-offset-4 transition-colors"
+              >
+                Ventrax.lk
+              </a>
             </p>
-
             <div className="flex flex-wrap justify-center items-center gap-6 text-sm">
               <Link
                 to="/terms"
