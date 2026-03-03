@@ -11,8 +11,8 @@ import logo from "/images/elevaremagazinee.svg"
 import { articleData } from "../data/articleData";
 
 export default function Footer() {
-  const recentArticles = articleData
-    .sort((a, b) => b.date - a.date)
+  const recentArticles = [...articleData]
+    .sort((a, b) => b.id - a.id)
     .slice(0, 3);
 
   const currentYear = new Date().getFullYear();
