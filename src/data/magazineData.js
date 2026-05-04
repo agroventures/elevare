@@ -22,5 +22,5 @@ export const magazineData = [
         volume: 4,
         image: "/images/magazine/v4.webp",
         date: "30 April, 2026"
-    },
+    }
 ]
