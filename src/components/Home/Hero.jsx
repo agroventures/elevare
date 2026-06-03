@@ -1,5 +1,5 @@
 export default function Hero() {
-  const videoLink = "https://res.cloudinary.com/dyvixdh7n/video/upload/v1767943516/elevare_video_ws2zds.mp4";
+  const videoLink = "https://pub-8476bede5a4146e8b7731cfe515f1c3b.r2.dev/elevare/elevare_video.mp4";
   const logoPath = "/elevare-logo.png"
 
   return (

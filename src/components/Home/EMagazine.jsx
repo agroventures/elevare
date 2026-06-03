@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export default function EMagazinePreview() {
   const [open, setOpen] = useState(false);
 
-  const magazineImagePath = "/images/magazine/magazines-min.png";
+  const magazineImagePath = "https://pub-8476bede5a4146e8b7731cfe515f1c3b.r2.dev/elevare/magazine/magazines-min.png";
 
   return (
     <>
