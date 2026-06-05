@@ -499,7 +499,7 @@ export const articleData = [
     tags: [],
   },
   {
-    id: 8,
+    id: 9,
     title: "The Unveiling of ELEVARE Magazine",
     shortTitle: "The Unveiling of ELEVARE Magazine",
     slug: "the-unveiling-of-elevare-magazine",
@@ -567,7 +567,7 @@ export const articleData = [
     tags: [],
   },
   {
-    id: 9,
+    id: 10,
     title: "Elevate with Akash: A New Era of Conversations on ELEVARE TV",
     volume: 2,
     shortTitle: "Elevate with Akash",
@@ -610,7 +610,7 @@ export const articleData = [
     tags: [],
   },
   {
-    id: 10,
+    id: 11,
     title: "Reviving Sri Lanka's Forgotton Spice",
     volume: 2,
     shortTitle: "Reviving Sri Lanka's Forgotton Spice",
@@ -654,7 +654,7 @@ export const articleData = [
     tags: [],
   },
   {
-    id: 11,
+    id: 12,
     title: "The Story of Louis Vuitton",
     volume: 2,
     shortTitle: "The Story of Louis Vuitton",
@@ -686,7 +686,7 @@ export const articleData = [
     tags: [],
   },
   {
-    id: 12,
+    id: 13,
     title: "Beneath the Blue: The Business of Beauty at ITHAA Undersea Maldives Restaurant",
     volume: 3,
     shortTitle: "Beneath the Blue: The Business of Beauty at ITHAA Undersea Maldives Restaurant",
@@ -728,7 +728,7 @@ export const articleData = [
     tags: [],
   },
   {
-    id: 13,
+    id: 14,
     title: "Agro Ventures Vanilla Trails -  Sri Lanka's Most Authentic Agri-Tourism Odyssey",
     volume: 3,
     shortTitle: "Agro Ventures Vanilla Trails -  Sri Lanka's Most Authentic Agri-Tourism Odyssey",
@@ -768,7 +768,7 @@ export const articleData = [
     tags: [],
   },
   {
-    id: 14,
+    id: 15,
     title: "The Birkin Bag - Where Luxury Meets Legend",
     volume: 3,
     shortTitle: "The Birkin Bag - Where Luxury Meets Legend",
@@ -807,7 +807,7 @@ export const articleData = [
     tags: [],
   },
   {
-    id: 15,
+    id: 16,
     title: "Ceylon Cinnamon - Sri Lanka's Golden Spice of Christmas",
     volume: 3,
     shortTitle: "Ceylon Cinnamon - Sri Lanka's Golden Spice of Christmas",
@@ -847,7 +847,7 @@ export const articleData = [
     tags: [],
   },
   {
-    id: 16,
+    id: 17,
     title: "Beyond Relief. A Leadership Responsibility in Rebuilding Sri Lanka",
     volume: 3,
     shortTitle: "Beyond Relief. A Leadership Responsibility in Rebuilding Sri Lanka",

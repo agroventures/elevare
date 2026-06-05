@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import ArticleDetailCard from "../components/Articles/ArticleDetailCard";
 import { articleData } from "../data/articleData";
@@ -32,18 +32,7 @@ export default function Articles() {
     twitter_card: "summary_large_image",
   });
 
-    useEffect(() => {
-    if (volumeParam) {
-      const parsedVolume = parseInt(volumeParam);
-      if (!isNaN(parsedVolume)) {
-        setSelectedVolume(parsedVolume);
-      }
-    } else {
-      setSelectedVolume("All");
-    }
-  }, [volumeParam]);
-
-  // Extract unique volumes from articleData (volumes are numbers)
+    // Extract unique volumes from articleData (volumes are numbers)
   const volumes = useMemo(() => {
     const uniqueVolumes = [
       ...new Set(
