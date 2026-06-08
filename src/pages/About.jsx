@@ -104,7 +104,7 @@ export default function About() {
               </div>
               <div className="relative bg-linear-to-br from-slate-50 to-white rounded-2xl p-8 lg:p-12 border border-slate-100 shadow-xl shadow-slate-200/50">
                 <p className="text-xl lg:text-2xl text-slate-700 leading-relaxed font-light italic">
-                  Business is not just about numbers—it's about{" "}
+                  Business is not just about numbers - it's about{" "}
                   <span className="text-blue font-medium not-italic">
                     people
                   </span>
