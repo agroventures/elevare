@@ -50,7 +50,7 @@ export const teamData = [
         designation: "Writer",
         image: "https://pub-8476bede5a4146e8b7731cfe515f1c3b.r2.dev/elevare/team/member7.webp",
         description:
-            ""
+            "An insightful writer with a passion for exploring ideas, culture, and everyday experiences through engaging content. She has a talent for transforming complex topics into clear, relatable stories that connect with readers. Her thoughtful approach and attention to detail ensure every piece is informative, meaningful, and enjoyable to read."
     },
     // {
     //     id: 8,
