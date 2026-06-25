@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import MemberCard from "../components/Team/MemberCard";
@@ -10,9 +10,17 @@ import useSEO from "../hooks/useSEO";
 export default function Team() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
-  const [isAnimating, setIsAnimating] = useState(false);
 
   const url = window.location.href;
+
+  useEffect(() => {
+    const link = document.createElement("link");
+    link.rel = "preload";
+    link.as = "image";
+    link.href = teamData[0].image;
+    document.head.appendChild(link);
+    return () => document.head.removeChild(link);
+  }, []);
 
   useSEO({
     header: "Team - ELEVARE Magazine",
@@ -36,15 +44,8 @@ export default function Team() {
     return () => clearInterval(interval);
   }, [isPaused]);
 
-  // Trigger animation on index change
-  useEffect(() => {
-    setIsAnimating(true);
-    const timer = setTimeout(() => setIsAnimating(false), 500);
-    return () => clearTimeout(timer);
-  }, [activeIndex]);
-
   // Calculate position for each card
-  const getCardStyles = (index) => {
+  const getCardStyles = useCallback((index) => {
     const totalMembers = teamData.length;
     const diff = index - activeIndex;
 
@@ -71,7 +72,7 @@ export default function Team() {
       filter: `blur(${blur}px)`,
       zIndex,
     };
-  };
+  }, [activeIndex]);
 
   const goToSlide = (index) => {
     setActiveIndex(index);
@@ -311,9 +312,7 @@ export default function Team() {
         <div className="max-w-3xl mx-auto mt-16">
           <div
             key={activeIndex}
-            className={`text-center transition-all duration-500 ${
-              isAnimating ? "opacity-0 translate-y-4" : "opacity-100 translate-y-0"
-            }`}
+            className="text-center transition-all duration-500 opacity-100 translate-y-0"
           >
             {/* Member Name */}
             <h3 className="text-3xl md:text-4xl font-bold text-slate-900 mb-2">

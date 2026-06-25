@@ -1,6 +1,6 @@
-import React from "react";
+import React, { memo } from "react";
 
-export default function MemberCard(props) {
+const MemberCard = memo(function MemberCard(props) {
   return (
     <div
       className="absolute w-72 cursor-pointer transition-all duration-700 ease-out"
@@ -27,6 +27,8 @@ export default function MemberCard(props) {
             <img
               src={props.image}
               alt={props.name}
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
           ) : (
@@ -60,4 +62,6 @@ export default function MemberCard(props) {
       </div>
     </div>
   );
-}
+});
+
+export default MemberCard;

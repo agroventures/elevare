@@ -64,6 +64,6 @@ export const teamData = [
         name: "Sara Pathirana",
         designation: "Writer",
         image: "https://pub-8476bede5a4146e8b7731cfe515f1c3b.r2.dev/elevare/team/member8.webp",
-        description: "A passionate storyteller with an innate ability to weave words into compelling narratives. He explore diverse topics with curiosity and depth, bringing fresh perspectives and authentic voices to every article. His dedication to craft ensures each piece informs, entertains, and leaves a lasting impression on our readers.",
+        description: "A dedicated writer and creative thinker who brings stories to life through compelling narratives and thoughtful insights. With a keen eye for detail and a passion for exploring diverse subjects, she crafts content that is both engaging and impactful. Her ability to blend authenticity with expertise allows her to create articles that educate, inspire, and foster meaningful connections with readers.",
     }
 ]
