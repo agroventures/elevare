@@ -611,10 +611,10 @@ export const articleData = [
   },
   {
     id: 11,
-    title: "Reviving Sri Lanka's Forgotton Spice",
+     title: "The Story of Louis Vuitton",
     volume: 2,
-    shortTitle: "Reviving Sri Lanka's Forgotton Spice",
-    slug: "reviving-sri-lankas-forgotton-spice",
+    shortTitle: "The Story of Louis Vuitton",
+    slug: "the-story-of-louis-vuitton",
     excerpt:
       "Vanilla is often thought of as a common flavor, but few people realize how rare, complex, and labor-intensive...",
     content: {
@@ -655,10 +655,10 @@ export const articleData = [
   },
   {
     id: 12,
-    title: "The Story of Louis Vuitton",
+    title: "Reviving Sri Lanka's Forgotton Spice",
     volume: 2,
-    shortTitle: "The Story of Louis Vuitton",
-    slug: "the-story-of-louis-vuitton",
+    shortTitle: "Reviving Sri Lanka's Forgotton Spice",
+    slug: "reviving-sri-lankas-forgotton-spice",
     excerpt:
       "In the world of ideas, influence, and innovation, a conversation can spark change, inspire ambition, and open new worlds of thought...",
     content: {
