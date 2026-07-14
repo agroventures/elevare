@@ -18,6 +18,7 @@ import RedirectToSubscribe from "./pages/RedirectToSubscribe";
 import { Toaster } from "react-hot-toast";
 // import SubscriptionSuccess from "./pages/SubscriptionSuccess";
 // import SubscriptionCancel from "./pages/SubscriptionCancel";
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
 
@@ -54,6 +55,7 @@ function App() {
           reverseOrder={false}
         />
         <ScrollToTop />
+        <Analytics />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
