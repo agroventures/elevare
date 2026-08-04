@@ -152,13 +152,13 @@ export default function Footer() {
               </span>
               . All rights reserved. Developed by{" "}
               <a
-                href="https://ventrax.lk"
-                target="_blank"
+                href="#"
+                // target="_blank"
                 rel="noopener noreferrer"
                 className="font-semibold text-primary-500 hover:text-primary-400 
                            underline underline-offset-4 transition-colors"
               >
-                Ventrax.lk
+                Agroventures Digital
               </a>
             </p>
             <div className="flex flex-wrap justify-center items-center gap-6 text-sm">
