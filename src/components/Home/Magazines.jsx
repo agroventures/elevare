@@ -40,7 +40,7 @@ export default function Magazines() {
           {/* Navigation Arrows */}
           <button
             id="prev-btn"
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-white shadow-lg rounded-full flex items-center justify-center text-black border border-zinc-200 transition-all duration-300 hover:bg-red hover:text-white hover:scale-110 hover:border-red"
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-white shadow-lg rounded-full flex items-center justify-center text-black border border-zinc-200 transition-all duration-300 hover:bg-blue hover:text-white hover:scale-110 hover:border-blue"
           >
             <div className="w-5 h-5">
               <BiChevronLeft size={20} />
@@ -49,7 +49,7 @@ export default function Magazines() {
 
           <button
             id="next-btn"
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-white shadow-lg rounded-full flex items-center justify-center text-black border border-zinc-200 transition-all duration-300 hover:bg-red hover:text-white hover:scale-110 hover:border-red"
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-white shadow-lg rounded-full flex items-center justify-center text-black border border-zinc-200 transition-all duration-300 hover:bg-blue hover:text-white hover:scale-110 hover:border-blue"
           >
             <div className="w-5 h-5">
               <BiChevronRight size={20} />
