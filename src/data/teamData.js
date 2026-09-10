@@ -37,7 +37,7 @@ export const teamData = [
     },
     {
         id: 6,
-        name: "Kamala Sugathadasa",
+        name: "Kamal Sugathadasa",
         designation: "Graphic Designer",
         image: "https://pub-8476bede5a4146e8b7731cfe515f1c3b.r2.dev/elevare/team/member5.webp",
         description:
